@@ -1,0 +1,1558 @@
+<?xml version="1.0"?>
+<predictive-model name="NoCodeML&#x5C;Dataset_Stack" is-valid="true" version="1" prog-id="KnowledgeMODEL.PredictiveModels.LogisticRegression.1">
+ <parameters>
+  <parameter name="PruneRequest" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="bool">false</value>
+    <value name="def" type="bool">true</value>
+    <value name="max" type="bool">true</value>
+   </limits>
+  </parameter>
+  <parameter name="RecordCount" read-only="false">
+   <value name="val" type="integer">0</value>
+   <limits>
+    <value name="min" type="integer">0</value>
+    <value name="def" type="integer">0</value>
+    <value name="max" type="integer">134217727</value>
+   </limits>
+  </parameter>
+  <parameter name="UseCount" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">false</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="MemorySoftLimit" read-only="false">
+   <value name="val" type="integer">134217728</value>
+   <limits>
+    <value name="min" type="integer">0</value>
+    <value name="def" type="integer">134217728</value>
+    <value name="max" type="integer">1073741824</value>
+   </limits>
+  </parameter>
+  <parameter name="MemoryHardLimit" read-only="false">
+   <value name="val" type="integer">134217728</value>
+   <limits>
+    <value name="min" type="integer">0</value>
+    <value name="def" type="integer">134217728</value>
+    <value name="max" type="integer">1073741824</value>
+   </limits>
+  </parameter>
+  <parameter name="RecordSelectFirstN" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">false</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="Resubstitute" read-only="false">
+   <value name="val" type="bool">true</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">true</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="HitRange" read-only="false">
+   <value name="val" type="integer">0</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="integer">0</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="UseRecordCount" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">false</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="SubSequencer" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">false</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="RandomSeed" read-only="false">
+   <value name="val" type="integer">1</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="integer">1</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="DataDumpFile" read-only="false">
+   <value name="val" type="missing">Missing</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="CreationStatement" read-only="true">
+   <value name="val" type="string">CREATE MINING MODEL &#x5B;NoCodeML&#x5D;.&#x5B;Dataset_Stack&#x5D; (&#x5B;Discontinued&#x5D; DISCRETIZED(DISCRETE, 50) PREDICT SET NULL AS NULL NORMALIZE TYPE FANOUT VALUES &apos;No&apos; LOAD FALSE,&apos;Yes&apos; END END,&#x5B;Dataset_Tree_Inst&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_Bagging&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_Boosting&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_DL&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_Reg&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_RndForest&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_Regul&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END) USING &#x5B;LogisticRegression&#x5D; (DataSource=&apos;&#x5B;NoCodeML&#x5D;.&#x5B;&#x23;T031d193323a345ba96e4c5788f08eb9d.tmp&#x5D;&apos;,SequenceMethod=&apos;None&apos;,SubSequencer=False,Resubstitute=True,HitRange=0,RandomSeed=1,MaxIteration=2000,LinkFunction=&apos;logistic&apos;,ComputeErrors=True,OddsConfidence=0.95,Optimizer=&apos;NewtonRaphson&apos;,GradEpsilon=1E-08,LineEpsilon=0.9,ExcludeIVCollinearity=1E-09,Intercept=&apos;False&apos;) FROM &#x5B;NoCodeML&#x5D;.&#x5B;&#x23;T031d193323a345ba96e4c5788f08eb9d.tmp&#x5D;</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TrainStatement" read-only="true">
+   <value name="val" type="string">INSERT INTO &#x5B;NoCodeML&#x5D;.&#x5B;Dataset_Stack&#x5D; FROM (SELECT &#x5B;Discontinued&#x5D;,&#x5B;Dataset_Tree_Inst&#x5D;,&#x5B;Dataset_Bagging&#x5D;,&#x5B;Dataset_Boosting&#x5D;,&#x5B;Dataset_DL&#x5D;,&#x5B;Dataset_Reg&#x5D;,&#x5B;Dataset_RndForest&#x5D;,&#x5B;Dataset_Regul&#x5D; FROM TABLE &#x5B;NoCodeML&#x5D;.&#x5B;&#x23;T031d193323a345ba96e4c5788f08eb9d.tmp&#x5D;)&amp;</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="Description" read-only="true">
+   <value name="val" type="missing">Missing</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TestExplained" read-only="true">
+   <value name="val" type="missing">Missing</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="MaxIteration" read-only="false">
+   <value name="val" type="integer">2000</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="integer">2000</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="SequenceMethod" read-only="false">
+   <value name="val" type="string">None</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">None</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="EntrySignificance" read-only="false">
+   <value name="val" type="real">0.15</value>
+   <limits>
+    <value name="min" type="real">0</value>
+    <value name="def" type="real">0.15</value>
+    <value name="max" type="real">1</value>
+   </limits>
+  </parameter>
+  <parameter name="ExitSignificance" read-only="false">
+   <value name="val" type="real">0.15</value>
+   <limits>
+    <value name="min" type="real">0</value>
+    <value name="def" type="real">0.15</value>
+    <value name="max" type="real">1</value>
+   </limits>
+  </parameter>
+  <parameter name="RoundTripLimit" read-only="false">
+   <value name="val" type="integer">2</value>
+   <limits>
+    <value name="min" type="integer">0</value>
+    <value name="def" type="integer">2</value>
+    <value name="max" type="integer">2147483647</value>
+   </limits>
+  </parameter>
+  <parameter name="KeepTrials" read-only="false">
+   <value name="val" type="bool">true</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">true</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="Intercept" read-only="false">
+   <value name="val" type="string">False</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">False</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="OddsConfidence" read-only="false">
+   <value name="val" type="real">0.95</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0.95</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="RegressionType" read-only="true">
+   <value name="val" type="string">logistic</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">logistic</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="ComputeErrors" read-only="false">
+   <value name="val" type="bool">true</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">true</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="LinkFunction" read-only="false">
+   <value name="val" type="string">logistic</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">logistic</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="Optimizer" read-only="false">
+   <value name="val" type="string">NewtonRaphson</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">NewtonRaphson</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="ExcludeIVCollinearity" read-only="false">
+   <value name="val" type="real">1e-09</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">1e-09</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="DataSource" read-only="false">
+   <value name="val" type="string">&#x5B;NoCodeML&#x5D;.&#x5B;&#x23;T031d193323a345ba96e4c5788f08eb9d.tmp&#x5D;</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">&#x5B;NoCodeML&#x5D;.&#x5B;&#x23;T031d193323a345ba96e4c5788f08eb9d.tmp&#x5D;</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="GradEpsilon" read-only="false">
+   <value name="val" type="real">1e-08</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">1e-08</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="LineEpsilon" read-only="false">
+   <value name="val" type="real">0.9</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0.9</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TrainedRecordCount" read-only="false">
+   <value name="val" type="real">4225</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">4225</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="CorrectTrainCount" read-only="false">
+   <value name="val" type="real">3401</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">3401</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TrainEntropyTotal" read-only="false">
+   <value name="val" type="real">4921.060631218476</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">4921.060631218476</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TrainEntropyError" read-only="false">
+   <value name="val" type="real">3419.416889164671</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">3419.416889164671</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TrainEntropyExplained" read-only="false">
+   <value name="val" type="real">0.3051463606295767</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0.3051463606295767</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TrainExplained" read-only="false">
+   <value name="val" type="real">0.3051463606295767</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0.3051463606295767</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TrainDegenerate" read-only="false">
+   <value name="val" type="real">0</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+ </parameters>
+ <variables class="independent">
+  <variable name="Dataset_Tree_Inst">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>scalar</type>
+    <denormal-type>real</denormal-type>
+    <width>1</width>
+    <missing-values>subst-median</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <offset>0</offset>
+    <scale>1</scale>
+    <power-exponent>1</power-exponent>
+    <log-base>10</log-base>
+    <clamp-lo>0</clamp-lo>
+    <clamp-hi>0</clamp-hi>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="real">0.26911242603550295</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0.24782087405629338</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">259.41774405053854</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="real">0.8456375838926175</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="real">0.1724137931034483</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="real">0.0023752969121140144</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.09964497041420119</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>real</denormal-type>
+   <data-type>continuous</data-type>
+  </variable>
+  <variable name="Dataset_Bagging">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>scalar</type>
+    <denormal-type>real</denormal-type>
+    <width>1</width>
+    <missing-values>subst-median</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <offset>0</offset>
+    <scale>1</scale>
+    <power-exponent>1</power-exponent>
+    <log-base>10</log-base>
+    <clamp-lo>0</clamp-lo>
+    <clamp-hi>0</clamp-hi>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="real">0.2689508452553719</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0.24273251187563247</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">248.87416148582193</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="real">0.0011367682814494757</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="real">0.8954010351509888</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="real">0.19384499006483144</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="real">0.0015850230016509585</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.005207100591715977</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>real</denormal-type>
+   <data-type>continuous</data-type>
+  </variable>
+  <variable name="Dataset_Boosting">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>scalar</type>
+    <denormal-type>real</denormal-type>
+    <width>1</width>
+    <missing-values>subst-median</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <offset>0</offset>
+    <scale>1</scale>
+    <power-exponent>1</power-exponent>
+    <log-base>10</log-base>
+    <clamp-lo>0</clamp-lo>
+    <clamp-hi>0</clamp-hi>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="real">0.2722147794375899</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0.23332825551348554</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">229.96332404376204</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="real">0.8225959331046344</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="real">0.19749189742594223</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="real">0.0028095172068513586</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.09964497041420119</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>real</denormal-type>
+   <data-type>continuous</data-type>
+  </variable>
+  <variable name="Dataset_DL">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>scalar</type>
+    <denormal-type>real</denormal-type>
+    <width>1</width>
+    <missing-values>subst-median</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <offset>0</offset>
+    <scale>1</scale>
+    <power-exponent>1</power-exponent>
+    <log-base>10</log-base>
+    <clamp-lo>0</clamp-lo>
+    <clamp-hi>0</clamp-hi>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="real">0.2680895180100479</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0.24281289000672698</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">249.03901251364144</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="real">0.0063573877150794305</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="real">0.8573937074314588</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="real">0.19850137268191737</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="real">0.23119010745692972</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.0009467455621301775</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>real</denormal-type>
+   <data-type>continuous</data-type>
+  </variable>
+  <variable name="Dataset_Reg">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>scalar</type>
+    <denormal-type>real</denormal-type>
+    <width>1</width>
+    <missing-values>subst-median</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <offset>0</offset>
+    <scale>1</scale>
+    <power-exponent>1</power-exponent>
+    <log-base>10</log-base>
+    <clamp-lo>0</clamp-lo>
+    <clamp-hi>0</clamp-hi>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="real">0.26911450306587936</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0.2422311398606951</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">247.84710769932593</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="real">0.0019147416902031073</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="real">0.837313387770414</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="real">0.19930839339280845</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="real">0.21903786687313176</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.0009467455621301775</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>real</denormal-type>
+   <data-type>continuous</data-type>
+  </variable>
+  <variable name="Dataset_RndForest">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>scalar</type>
+    <denormal-type>real</denormal-type>
+    <width>1</width>
+    <missing-values>subst-median</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <offset>0</offset>
+    <scale>1</scale>
+    <power-exponent>1</power-exponent>
+    <log-base>10</log-base>
+    <clamp-lo>0</clamp-lo>
+    <clamp-hi>0</clamp-hi>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="real">0.2690210871886924</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0.19353023363734087</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">158.2054904252011</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="real">0.012161747679020696</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="real">0.7271952816985382</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="real">0.24105875548383485</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="real">0.26160568211037766</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.0033136094674556214</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>real</denormal-type>
+   <data-type>continuous</data-type>
+  </variable>
+  <variable name="Dataset_Regul">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>scalar</type>
+    <denormal-type>real</denormal-type>
+    <width>1</width>
+    <missing-values>subst-median</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <offset>0</offset>
+    <scale>1</scale>
+    <power-exponent>1</power-exponent>
+    <log-base>10</log-base>
+    <clamp-lo>0</clamp-lo>
+    <clamp-hi>0</clamp-hi>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="real">0.26911242604680435</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0.24066387000777442</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">244.6502713337504</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="real">0.002110685171099305</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="real">0.8353947948526468</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="real">0.19920930849838758</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="real">0.21615738247802552</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.0009467455621301775</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>real</denormal-type>
+   <data-type>continuous</data-type>
+  </variable>
+ </variables>
+ <variables class="dependent">
+  <variable name="Discontinued">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">Yes</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.730887573964497</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">No</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Yes</value>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+ </variables>
+ <variables class="predicted">
+  <variable name="Discontinued">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">Yes</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.730887573964497</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">No</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Yes</value>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+ </variables>
+ <attribute-info>
+  <dv-complexity>250</dv-complexity>
+  <map-collection/>
+  <attribute name="Discontinued" index="0">
+   <state>dependent</state>
+   <original-name>Discontinued</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="discrete">2</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram>
+       <hist-entry>
+        <value type="string">No</value>
+        <weighted>3088</weighted>
+        <unweighted>3088</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Yes</value>
+        <weighted>1137</weighted>
+        <unweighted>1137</unweighted>
+       </hist-entry>
+      </histogram>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="string">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.730887573964497</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+     <normalize-value-list>
+      <normalize-value>
+       <value name="nv-value" type="string">No</value>
+       <nv-load>false</nv-load>
+       <nv-use>false</nv-use>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Yes</value>
+       <nv-rank>0</nv-rank>
+      </normalize-value>
+     </normalize-value-list>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="Dataset_Tree_Inst" index="1">
+   <state>independent</state>
+   <original-name>Dataset_Tree_Inst</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>continuous</grouping>
+    <intervals type="continuous">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>range</display>
+    <break-apart>yes</break-apart>
+    <value-type>real</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>scalar</type>
+     <denormal-type>real</denormal-type>
+     <width>1</width>
+     <missing-values>subst-median</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <offset>0</offset>
+     <scale>1</scale>
+     <power-exponent>1</power-exponent>
+     <log-base>10</log-base>
+     <clamp-lo>0</clamp-lo>
+     <clamp-hi>0</clamp-hi>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="real">0.26911242603550295</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="real">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="real">0.8456375838926175</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="real">0.1724137931034483</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="real">0.0023752969121140144</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.09964497041420119</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="real">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="real">0.8456375838926175</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="Dataset_Bagging" index="2">
+   <state>independent</state>
+   <original-name>Dataset_Bagging</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>continuous</grouping>
+    <intervals type="continuous">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>range</display>
+    <break-apart>yes</break-apart>
+    <value-type>real</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>scalar</type>
+     <denormal-type>real</denormal-type>
+     <width>1</width>
+     <missing-values>subst-median</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <offset>0</offset>
+     <scale>1</scale>
+     <power-exponent>1</power-exponent>
+     <log-base>10</log-base>
+     <clamp-lo>0</clamp-lo>
+     <clamp-hi>0</clamp-hi>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="real">0.2689508452553719</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="real">0.0011367682814494757</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="real">0.8954010351509888</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="real">0.19384499006483144</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="real">0.0015850230016509585</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.005207100591715977</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="real">0.0011367682814494757</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="real">0.8954010351509888</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="Dataset_Boosting" index="3">
+   <state>independent</state>
+   <original-name>Dataset_Boosting</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>continuous</grouping>
+    <intervals type="continuous">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>range</display>
+    <break-apart>yes</break-apart>
+    <value-type>real</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>scalar</type>
+     <denormal-type>real</denormal-type>
+     <width>1</width>
+     <missing-values>subst-median</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <offset>0</offset>
+     <scale>1</scale>
+     <power-exponent>1</power-exponent>
+     <log-base>10</log-base>
+     <clamp-lo>0</clamp-lo>
+     <clamp-hi>0</clamp-hi>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="real">0.2722147794375899</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="real">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="real">0.8225959331046344</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="real">0.19749189742594223</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="real">0.0028095172068513586</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.09964497041420119</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="real">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="real">0.8225959331046344</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="Dataset_DL" index="4">
+   <state>independent</state>
+   <original-name>Dataset_DL</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>continuous</grouping>
+    <intervals type="continuous">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>range</display>
+    <break-apart>yes</break-apart>
+    <value-type>real</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>scalar</type>
+     <denormal-type>real</denormal-type>
+     <width>1</width>
+     <missing-values>subst-median</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <offset>0</offset>
+     <scale>1</scale>
+     <power-exponent>1</power-exponent>
+     <log-base>10</log-base>
+     <clamp-lo>0</clamp-lo>
+     <clamp-hi>0</clamp-hi>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="real">0.2680895180100479</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="real">0.0063573877150794305</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="real">0.8573937074314588</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="real">0.19850137268191737</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="real">0.23119010745692972</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.0009467455621301775</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="real">0.0063573877150794305</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="real">0.8573937074314588</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="Dataset_Reg" index="5">
+   <state>independent</state>
+   <original-name>Dataset_Reg</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>continuous</grouping>
+    <intervals type="continuous">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>range</display>
+    <break-apart>yes</break-apart>
+    <value-type>real</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>scalar</type>
+     <denormal-type>real</denormal-type>
+     <width>1</width>
+     <missing-values>subst-median</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <offset>0</offset>
+     <scale>1</scale>
+     <power-exponent>1</power-exponent>
+     <log-base>10</log-base>
+     <clamp-lo>0</clamp-lo>
+     <clamp-hi>0</clamp-hi>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="real">0.26911450306587936</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="real">0.0019147416902031073</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="real">0.837313387770414</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="real">0.19930839339280845</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="real">0.21903786687313176</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.0009467455621301775</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="real">0.0019147416902031073</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="real">0.837313387770414</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="Dataset_RndForest" index="6">
+   <state>independent</state>
+   <original-name>Dataset_RndForest</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>continuous</grouping>
+    <intervals type="continuous">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>range</display>
+    <break-apart>yes</break-apart>
+    <value-type>real</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>scalar</type>
+     <denormal-type>real</denormal-type>
+     <width>1</width>
+     <missing-values>subst-median</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <offset>0</offset>
+     <scale>1</scale>
+     <power-exponent>1</power-exponent>
+     <log-base>10</log-base>
+     <clamp-lo>0</clamp-lo>
+     <clamp-hi>0</clamp-hi>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="real">0.2690210871886924</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="real">0.012161747679020696</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="real">0.7271952816985382</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="real">0.24105875548383485</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="real">0.26160568211037766</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.0033136094674556214</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="real">0.012161747679020696</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="real">0.7271952816985382</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="Dataset_Regul" index="7">
+   <state>independent</state>
+   <original-name>Dataset_Regul</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>continuous</grouping>
+    <intervals type="continuous">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>range</display>
+    <break-apart>yes</break-apart>
+    <value-type>real</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>scalar</type>
+     <denormal-type>real</denormal-type>
+     <width>1</width>
+     <missing-values>subst-median</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <offset>0</offset>
+     <scale>1</scale>
+     <power-exponent>1</power-exponent>
+     <log-base>10</log-base>
+     <clamp-lo>0</clamp-lo>
+     <clamp-hi>0</clamp-hi>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="real">0.26911242604680435</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="real">0.002110685171099305</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="real">0.8353947948526468</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="real">0.19920930849838758</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="real">0.21615738247802552</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.0009467455621301775</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="real">0.002110685171099305</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="real">0.8353947948526468</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+ </attribute-info>
+ <series>
+  <series-data/>
+ </series>
+ <neural-model-list best="0" current="0">
+  <neural-model model-id="MLP neural net" default-activation-function="sigmoid" default-threshold="0">
+   <info top-string="7/1:logistic">
+    <ss0>4921.060631218476</ss0>
+    <df0>4224</df0>
+    <ssr>1501.6437420538055</ssr>
+    <dfr>7</dfr>
+    <sse>3419.416889164671</sse>
+    <dfe>4217</dfe>
+    <ANOVA classifier="true">
+     <rows separated="true">
+      <total>4225</total>
+      <correct>3401</correct>
+     </rows>
+     <ss0>4921.060631218476</ss0>
+     <df0>4224</df0>
+     <ssr>1501.6437420538055</ssr>
+     <dfr>7</dfr>
+     <sse>3419.416889164671</sse>
+     <dfe>4217</dfe>
+     <concordant>3022215</concordant>
+     <discordant>488827</discordant>
+     <tied>14</tied>
+     <auc>0.7636843357065293</auc>
+     <measurement name="wald" distribution="chi-squared" test="wald">
+      <df>7</df>
+      <statistic>944.6802592719023</statistic>
+      <p-value>1.075595210487912e-199</p-value>
+      <log-p-value>-458.1415593132872</log-p-value>
+     </measurement>
+     <measurement name="score" distribution="chi-squared" test="score">
+      <df>7</df>
+      <statistic>1415.787979806768</statistic>
+      <p-value>1.48055675855998e-301</p-value>
+      <log-p-value>-692.6856947859566</log-p-value>
+     </measurement>
+     <wald>944.6802592719023</wald>
+     <score>1415.787979806768</score>
+    </ANOVA>
+    <dfg>0</dfg>
+    <sep>0</sep>
+    <loc>0</loc>
+    <abias>0</abias>
+    <select name="iv">0 1 2 3 4 5 6</select>
+    <select name="pv">0</select>
+    <vif variable="&#x5B;Dataset_Tree_Inst&#x5D;">43.72936018690066</vif>
+    <vif variable="&#x5B;Dataset_Bagging&#x5D;">59.56326394608662</vif>
+    <vif variable="&#x5B;Dataset_Boosting&#x5D;">42.72325820796351</vif>
+    <vif variable="&#x5B;Dataset_DL&#x5D;">109.32194709854235</vif>
+    <vif variable="&#x5B;Dataset_Reg&#x5D;">2845.994407183446</vif>
+    <vif variable="&#x5B;Dataset_RndForest&#x5D;">36.145212517363696</vif>
+    <vif variable="&#x5B;Dataset_Regul&#x5D;">3598.6446831128565</vif>
+    <vector name="dmodel" type="real" dim="8">0.9274507678829041 1.2424394688687384 1.064215089535606 1.6430100657090427 8.426241344238662 1.3430015439305378 9.668403191405154 0.13531783138457412</vector>
+    <vector name="smodel" type="real" dim="8">-0.6275320628204957 0.5060154336704171 0.7351102654199614 0.29780443476582974 6.250426883134775 1.2371496236908712 -6.77844230871919 0</vector>
+    <vector name="sdmodel" type="real" dim="8">0.2298416599409216 0.3015804531319356 0.2483114503324707 0.39894402236495524 2.0410980455562466 0.2599114025721869 2.3268353288390786 -1</vector>
+    <cmodel>11111111</cmodel>
+    <bmodel>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</bmodel>
+    <xmodel>0000000</xmodel>
+   </info>
+   <nn-input node-id="i-1" input-name=""/>
+   <nn-input node-id="i-2" input-name=""/>
+   <nn-input node-id="i-3" input-name=""/>
+   <nn-input node-id="i-4" input-name=""/>
+   <nn-input node-id="i-5" input-name=""/>
+   <nn-input node-id="i-6" input-name=""/>
+   <nn-input node-id="i-7" input-name=""/>
+   <nn-output node-id="o-1" activation-function="softmax0" bias="-3.6170340661060343" output-name=" ">
+    <nn-connection from-node="i-1" weight="-2.53220018374219"/>
+    <nn-connection from-node="i-2" weight="2.084662782749438"/>
+    <nn-connection from-node="i-3" weight="3.1505411284295777"/>
+    <nn-connection from-node="i-4" weight="1.2264770406446672"/>
+    <nn-connection from-node="i-5" weight="25.80356467268964"/>
+    <nn-connection from-node="i-6" weight="6.392539297033981"/>
+    <nn-connection from-node="i-7" weight="-28.165600048317295"/>
+   </nn-output>
+  </neural-model>
+ </neural-model-list>
+</predictive-model>

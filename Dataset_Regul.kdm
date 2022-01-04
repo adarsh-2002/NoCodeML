@@ -1,0 +1,3477 @@
+<?xml version="1.0"?>
+<predictive-model name="NoCodeML&#x5C;Dataset_Regul" is-valid="true" version="1" prog-id="KnowledgeMODEL.PredictiveModels.LogisticRegression.1">
+ <parameters>
+  <parameter name="PruneRequest" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="bool">false</value>
+    <value name="def" type="bool">true</value>
+    <value name="max" type="bool">true</value>
+   </limits>
+  </parameter>
+  <parameter name="RecordCount" read-only="false">
+   <value name="val" type="integer">0</value>
+   <limits>
+    <value name="min" type="integer">0</value>
+    <value name="def" type="integer">0</value>
+    <value name="max" type="integer">134217727</value>
+   </limits>
+  </parameter>
+  <parameter name="UseCount" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">false</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="MemorySoftLimit" read-only="false">
+   <value name="val" type="integer">134217728</value>
+   <limits>
+    <value name="min" type="integer">0</value>
+    <value name="def" type="integer">134217728</value>
+    <value name="max" type="integer">1073741824</value>
+   </limits>
+  </parameter>
+  <parameter name="MemoryHardLimit" read-only="false">
+   <value name="val" type="integer">134217728</value>
+   <limits>
+    <value name="min" type="integer">0</value>
+    <value name="def" type="integer">134217728</value>
+    <value name="max" type="integer">1073741824</value>
+   </limits>
+  </parameter>
+  <parameter name="RecordSelectFirstN" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">false</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="Resubstitute" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">false</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="HitRange" read-only="false">
+   <value name="val" type="real">0</value>
+   <limits>
+    <value name="min" type="real">0</value>
+    <value name="def" type="real">0</value>
+    <value name="max" type="real">1e+38</value>
+   </limits>
+  </parameter>
+  <parameter name="UseRecordCount" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">false</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="SubSequencer" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">false</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="RandomSeed" read-only="false">
+   <value name="val" type="missing">Missing</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="DataDumpFile" read-only="false">
+   <value name="val" type="missing">Missing</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="CreationStatement" read-only="true">
+   <value name="val" type="string">CREATE MINING MODEL &#x5B;NoCodeML&#x5D;.&#x5B;Dataset_Regul&#x5D; (&#x5B;Discontinued&#x5D; DISCRETIZED(DISCRETE, 50) PREDICT NORMALIZE TYPE FANOUT GROUP 0 VALUES &apos;No&apos; LOAD FALSE,&apos;Yes&apos; END END,&#x5B;SeniorCitizen&#x5D; DISCRETIZED(DISCRETE, 50) NORMALIZE TYPE fanout GROUP 0 END,&#x5B;Partner&#x5D; DISCRETIZED(DISCRETE, 50) NORMALIZE TYPE fanout GROUP 0 END,&#x5B;Dependents&#x5D; DISCRETIZED(DISCRETE, 50) NORMALIZE TYPE fanout GROUP 0 END,&#x5B;tenure&#x5D; DISCRETIZED(CONTINUOUS, 50) NORMALIZE TYPE scalar GROUP 0 END,&#x5B;InternetService&#x5D; DISCRETIZED(DISCRETE, 50) NORMALIZE TYPE fanout GROUP 0 END,&#x5B;OnlineSecurity&#x5D; DISCRETIZED(DISCRETE, 50) NORMALIZE TYPE fanout GROUP 0 END,&#x5B;OnlineBackup&#x5D; DISCRETIZED(DISCRETE, 50) NORMALIZE TYPE fanout GROUP 0 END,&#x5B;DeviceProtection&#x5D; DISCRETIZED(DISCRETE, 50) NORMALIZE TYPE fanout GROUP 0 END,&#x5B;TechSupport&#x5D; DISCRETIZED(DISCRETE, 50) NORMALIZE TYPE fanout GROUP 0 END,&#x5B;StreamingTV&#x5D; DISCRETIZED(DISCRETE, 50) NORMALIZE TYPE fanout GROUP 0 END,&#x5B;StreamingMovies&#x5D; DISCRETIZED(DISCRETE, 50) NORMALIZE TYPE fanout GROUP 0 END,&#x5B;Contract&#x5D; DISCRETIZED(DISCRETE, 50) NORMALIZE TYPE fanout GROUP 0 END,&#x5B;PaperlessBilling&#x5D; DISCRETIZED(DISCRETE, 50) NORMALIZE TYPE fanout GROUP 0 END,&#x5B;PaymentMethod&#x5D; DISCRETIZED(DISCRETE, 50) NORMALIZE TYPE fanout GROUP 0 END,&#x5B;MonthlyCharges&#x5D; DISCRETIZED(CONTINUOUS, 50) NORMALIZE TYPE scalar GROUP 0 END,&#x5B;TotalCharges&#x5D; DISCRETIZED(CONTINUOUS, 50) NORMALIZE TYPE scalar GROUP 0 END) USING &#x5B;LogisticRegression&#x5D; (DataSource=&apos;&#x5B;NoCodeML&#x5D;.&#x5B;Dataset_VS&#x5D;&apos;,Intercept=&apos;False&apos;,RegularizeIntercept=&apos;False&apos;,RegularizePerRow=&apos;False&apos;,Ridge=1,ExcludeIVCollinearity=0,Dual=&apos;False&apos;,DataStandardize=&apos;none&apos;,RegularizeXStandardize=&apos;mean&apos;,RegularizeYStandardize=&apos;none&apos;) FROM &#x5B;NoCodeML&#x5D;.&#x5B;Dataset_VS&#x5D;</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TrainStatement" read-only="true">
+   <value name="val" type="string">INSERT INTO &#x5B;NoCodeML&#x5D;.&#x5B;Dataset_Regul&#x5D; FROM (SELECT &#x5B;Discontinued&#x5D;,&#x5B;SeniorCitizen&#x5D;,&#x5B;Partner&#x5D;,&#x5B;Dependents&#x5D;,&#x5B;tenure&#x5D;,&#x5B;InternetService&#x5D;,&#x5B;OnlineSecurity&#x5D;,&#x5B;OnlineBackup&#x5D;,&#x5B;DeviceProtection&#x5D;,&#x5B;TechSupport&#x5D;,&#x5B;StreamingTV&#x5D;,&#x5B;StreamingMovies&#x5D;,&#x5B;Contract&#x5D;,&#x5B;PaperlessBilling&#x5D;,&#x5B;PaymentMethod&#x5D;,&#x5B;MonthlyCharges&#x5D;,&#x5B;TotalCharges&#x5D; FROM TABLE &#x5B;NoCodeML&#x5D;.&#x5B;Dataset_VS&#x5D;)&amp;</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="Description" read-only="true">
+   <value name="val" type="missing">Missing</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TestExplained" read-only="true">
+   <value name="val" type="missing">Missing</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="MaxIteration" read-only="false">
+   <value name="val" type="integer">2000</value>
+   <limits>
+    <value name="min" type="integer">1</value>
+    <value name="def" type="integer">2000</value>
+    <value name="max" type="integer">2147483647</value>
+   </limits>
+  </parameter>
+  <parameter name="SequenceMethod" read-only="false">
+   <value name="val" type="string">None</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">None</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="EntrySignificance" read-only="false">
+   <value name="val" type="real">0.15</value>
+   <limits>
+    <value name="min" type="real">0</value>
+    <value name="def" type="real">0.15</value>
+    <value name="max" type="real">1</value>
+   </limits>
+  </parameter>
+  <parameter name="ExitSignificance" read-only="false">
+   <value name="val" type="real">0.15</value>
+   <limits>
+    <value name="min" type="real">0</value>
+    <value name="def" type="real">0.15</value>
+    <value name="max" type="real">1</value>
+   </limits>
+  </parameter>
+  <parameter name="RoundTripLimit" read-only="false">
+   <value name="val" type="integer">2</value>
+   <limits>
+    <value name="min" type="integer">0</value>
+    <value name="def" type="integer">2</value>
+    <value name="max" type="integer">2147483647</value>
+   </limits>
+  </parameter>
+  <parameter name="KeepTrials" read-only="false">
+   <value name="val" type="bool">true</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">true</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="Intercept" read-only="false">
+   <value name="val" type="string">False</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">False</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="OddsConfidence" read-only="false">
+   <value name="val" type="real">0.95</value>
+   <limits>
+    <value name="min" type="real">0</value>
+    <value name="def" type="real">0.95</value>
+    <value name="max" type="real">1</value>
+   </limits>
+  </parameter>
+  <parameter name="RegressionType" read-only="true">
+   <value name="val" type="string">logistic</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">logistic</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="ComputeErrors" read-only="false">
+   <value name="val" type="bool">true</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">true</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="LinkFunction" read-only="false">
+   <value name="val" type="string">logistic</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">logistic</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="Optimizer" read-only="false">
+   <value name="val" type="string">NewtonRaphson</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">NewtonRaphson</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="ExcludeIVCollinearity" read-only="false">
+   <value name="val" type="integer">0</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="integer">0</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="DataSource" read-only="false">
+   <value name="val" type="string">&#x5B;NoCodeML&#x5D;.&#x5B;Dataset_VS&#x5D;</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">&#x5B;NoCodeML&#x5D;.&#x5B;Dataset_VS&#x5D;</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="RegularizeIntercept" read-only="false">
+   <value name="val" type="string">False</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">False</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="RegularizePerRow" read-only="false">
+   <value name="val" type="string">False</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">False</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="Ridge" read-only="false">
+   <value name="val" type="integer">1</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="integer">1</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="Dual" read-only="false">
+   <value name="val" type="string">False</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">False</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="DataStandardize" read-only="false">
+   <value name="val" type="string">none</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">none</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="RegularizeXStandardize" read-only="false">
+   <value name="val" type="string">mean</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">mean</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="RegularizeYStandardize" read-only="false">
+   <value name="val" type="string">none</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">none</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TrainedRecordCount" read-only="false">
+   <value name="val" type="real">4225</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">4225</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="CorrectTrainCount" read-only="false">
+   <value name="val" type="real">3384</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">3384</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TrainEntropyTotal" read-only="false">
+   <value name="val" type="real">4921.060631218476</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">4921.060631218476</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TrainEntropyError" read-only="false">
+   <value name="val" type="real">3552.5179046544795</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">3552.5179046544795</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TrainEntropyExplained" read-only="false">
+   <value name="val" type="real">0.2780991394176624</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0.2780991394176624</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TrainExplained" read-only="false">
+   <value name="val" type="real">0.2780991394176624</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0.2780991394176624</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TrainDegenerate" read-only="false">
+   <value name="val" type="real">0</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="RemoveParam_ReportModelName" read-only="false">
+   <value name="val" type="string">Ridge Regression</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="RemoveParam_LinkFunction" read-only="false">
+   <value name="val" type="string">Logit (Logistic Regression)</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="RemoveParam_Method" read-only="false">
+   <value name="val" type="string">Ridge Regression</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="RemoveParam_StandOptions" read-only="false">
+   <value name="val" type="string">Report coefficients for un-standardized data</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="RemoveParam_StandType" read-only="false">
+   <value name="val" type="string">Center</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+ </parameters>
+ <variables class="independent">
+  <variable name="SeniorCitizen">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>real</denormal-type>
+    <width>1</width>
+    <group>0</group>
+    <missing-values>subst-median</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="real">0.16733727810650886</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0.373320907651385</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">588.6925443786982</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="real">1</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.8326627218934911</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="real">0</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+      <nv-group>0</nv-group>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="real">1</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>real</denormal-type>
+   <data-type>continuous</data-type>
+  </variable>
+  <variable name="Partner">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <group>0</group>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">Yes</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.5244970414201183</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">No</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+      <nv-group>0</nv-group>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Yes</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="Dependents">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <group>0</group>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">Yes</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.701301775147929</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">No</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+      <nv-group>0</nv-group>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Yes</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="tenure">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>scalar</type>
+    <denormal-type>real</denormal-type>
+    <width>1</width>
+    <group>0</group>
+    <missing-values>subst-median</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <offset>0</offset>
+    <scale>1</scale>
+    <power-exponent>1</power-exponent>
+    <log-base>10</log-base>
+    <clamp-lo>0</clamp-lo>
+    <clamp-hi>0</clamp-hi>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="real">31.733491124260354</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">24.416155577276072</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">2518131.9110059175</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="real">72</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="real">28</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="real">1</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.08875739644970414</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>real</denormal-type>
+   <data-type>continuous</data-type>
+  </variable>
+  <variable name="InternetService">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>2</width>
+    <group>0</group>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">DSL</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">Fiber optic</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">Fiber optic</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.44</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">DSL</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Fiber optic</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+      <nv-group>0</nv-group>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">No</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0.5</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="OnlineSecurity">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>2</width>
+    <group>0</group>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">Yes</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.5041420118343195</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">No</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+      <nv-group>0</nv-group>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">No internet service</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Yes</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0.5</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="OnlineBackup">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>2</width>
+    <group>0</group>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">Yes</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">No internet service</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.44355029585798816</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">No</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+      <nv-group>0</nv-group>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">No internet service</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Yes</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0.5</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="DeviceProtection">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>2</width>
+    <group>0</group>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">Yes</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">No internet service</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.4454437869822485</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">No</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+      <nv-group>0</nv-group>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">No internet service</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Yes</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0.5</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="TechSupport">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>2</width>
+    <group>0</group>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">Yes</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">No internet service</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.49538461538461537</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">No</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+      <nv-group>0</nv-group>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">No internet service</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Yes</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0.5</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="StreamingTV">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>2</width>
+    <group>0</group>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">Yes</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">No internet service</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.4066272189349112</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">No</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+      <nv-group>0</nv-group>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">No internet service</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Yes</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0.5</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="StreamingMovies">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>2</width>
+    <group>0</group>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">Yes</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">No internet service</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.3950295857988166</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">No</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+      <nv-group>0</nv-group>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">No internet service</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Yes</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0.5</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="Contract">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>2</width>
+    <group>0</group>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">Month-to-month</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">Two year</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">Month-to-month</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">Month-to-month</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.5571597633136095</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">Month-to-month</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+      <nv-group>0</nv-group>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">One year</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Two year</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0.5</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="PaperlessBilling">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <group>0</group>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">Yes</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">Yes</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">Yes</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.5886390532544379</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">No</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Yes</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+      <nv-group>0</nv-group>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="PaymentMethod">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>3</width>
+    <group>0</group>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">Bank transfer (automatic)</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">Mailed check</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">Electronic check</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">Electronic check</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.34201183431952664</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">Bank transfer (automatic)</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Credit card (automatic)</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0.3333333333333333</nv-rank>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Electronic check</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+      <nv-group>0</nv-group>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Mailed check</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0.6666666666666666</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="MonthlyCharges">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>scalar</type>
+    <denormal-type>real</denormal-type>
+    <width>1</width>
+    <group>0</group>
+    <missing-values>subst-median</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <offset>0</offset>
+    <scale>1</scale>
+    <power-exponent>1</power-exponent>
+    <log-base>10</log-base>
+    <clamp-lo>0</clamp-lo>
+    <clamp-hi>0</clamp-hi>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="real">64.61169230769227</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">29.89889464344161</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">3776019.0374000017</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="real">18.4</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="real">118.75</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="real">70.3</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="real">20.05</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.008757396449704143</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>real</denormal-type>
+   <data-type>continuous</data-type>
+  </variable>
+  <variable name="TotalCharges">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>scalar</type>
+    <denormal-type>real</denormal-type>
+    <width>1</width>
+    <group>0</group>
+    <missing-values>subst-median</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <offset>0</offset>
+    <scale>1</scale>
+    <power-exponent>1</power-exponent>
+    <log-base>10</log-base>
+    <clamp-lo>0</clamp-lo>
+    <clamp-hi>0</clamp-hi>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="real">2218.2521687603735</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">2235.9962201558596</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">21118644503.832657</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="real">18.8</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="real">8672.45</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="real">1346.9</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="real">19.65</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.0014201183431952662</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>real</denormal-type>
+   <data-type>continuous</data-type>
+  </variable>
+ </variables>
+ <variables class="dependent">
+  <variable name="Discontinued">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <group>0</group>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">Yes</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.730887573964497</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">No</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+      <nv-group>0</nv-group>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Yes</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+ </variables>
+ <variables class="predicted">
+  <variable name="Discontinued">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>true</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <group>0</group>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics>
+      <data-summary-statistic name="finite_mean">
+       <valid>true</valid>
+       <value type="string">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_stddev">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_devsqr">
+       <valid>true</valid>
+       <value type="real">0</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_minReal">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="finite_maxReal">
+       <valid>true</valid>
+       <value type="string">Yes</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="median">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="mode1">
+       <valid>true</valid>
+       <value type="string">No</value>
+      </data-summary-statistic>
+      <data-summary-statistic name="peak1">
+       <valid>true</valid>
+       <value type="real">0.730887573964497</value>
+      </data-summary-statistic>
+     </data-summary-statistics>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+    <normalize-value-list>
+     <normalize-value>
+      <value name="nv-value" type="string">No</value>
+      <nv-load>false</nv-load>
+      <nv-use>false</nv-use>
+      <nv-group>0</nv-group>
+     </normalize-value>
+     <normalize-value>
+      <value name="nv-value" type="string">Yes</value>
+      <nv-group>0</nv-group>
+      <nv-rank>0</nv-rank>
+     </normalize-value>
+    </normalize-value-list>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+ </variables>
+ <attribute-info>
+  <dv-complexity>250</dv-complexity>
+  <map-collection/>
+  <attribute name="Discontinued" index="0">
+   <state>dependent</state>
+   <original-name>Discontinued</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="discrete">2</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <group>0</group>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram>
+       <hist-entry>
+        <value type="string">No</value>
+        <weighted>3088</weighted>
+        <unweighted>3088</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Yes</value>
+        <weighted>1137</weighted>
+        <unweighted>1137</unweighted>
+       </hist-entry>
+      </histogram>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="string">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.730887573964497</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+     <normalize-value-list>
+      <normalize-value>
+       <value name="nv-value" type="string">No</value>
+       <nv-load>false</nv-load>
+       <nv-use>false</nv-use>
+       <nv-group>0</nv-group>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Yes</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0</nv-rank>
+      </normalize-value>
+     </normalize-value-list>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="SeniorCitizen" index="1">
+   <state>independent</state>
+   <original-name>SeniorCitizen</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>continuous</grouping>
+    <intervals type="discrete">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>range</display>
+    <break-apart>yes</break-apart>
+    <value-type>real</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>discrete</type>
+     <denormal-type>real</denormal-type>
+     <width>1</width>
+     <group>0</group>
+     <missing-values>subst-median</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram>
+       <hist-entry>
+        <value type="real">0</value>
+        <weighted>3518</weighted>
+        <unweighted>3518</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="real">1</value>
+        <weighted>707</weighted>
+        <unweighted>707</unweighted>
+       </hist-entry>
+      </histogram>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="real">0.16733727810650886</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="real">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="real">1</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="real">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="real">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.8326627218934911</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="real">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="real">1</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+     <normalize-value-list>
+      <normalize-value>
+       <value name="nv-value" type="real">0</value>
+       <nv-load>false</nv-load>
+       <nv-use>false</nv-use>
+       <nv-group>0</nv-group>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="real">1</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0</nv-rank>
+      </normalize-value>
+     </normalize-value-list>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="Partner" index="2">
+   <state>independent</state>
+   <original-name>Partner</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="discrete">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <group>0</group>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram>
+       <hist-entry>
+        <value type="string">No</value>
+        <weighted>2216</weighted>
+        <unweighted>2216</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Yes</value>
+        <weighted>2009</weighted>
+        <unweighted>2009</unweighted>
+       </hist-entry>
+      </histogram>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="string">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.5244970414201183</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+     <normalize-value-list>
+      <normalize-value>
+       <value name="nv-value" type="string">No</value>
+       <nv-load>false</nv-load>
+       <nv-use>false</nv-use>
+       <nv-group>0</nv-group>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Yes</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0</nv-rank>
+      </normalize-value>
+     </normalize-value-list>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="Dependents" index="3">
+   <state>independent</state>
+   <original-name>Dependents</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="discrete">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <group>0</group>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram>
+       <hist-entry>
+        <value type="string">No</value>
+        <weighted>2963</weighted>
+        <unweighted>2963</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Yes</value>
+        <weighted>1262</weighted>
+        <unweighted>1262</unweighted>
+       </hist-entry>
+      </histogram>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="string">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.701301775147929</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+     <normalize-value-list>
+      <normalize-value>
+       <value name="nv-value" type="string">No</value>
+       <nv-load>false</nv-load>
+       <nv-use>false</nv-use>
+       <nv-group>0</nv-group>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Yes</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0</nv-rank>
+      </normalize-value>
+     </normalize-value-list>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="tenure" index="4">
+   <state>independent</state>
+   <original-name>tenure</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>continuous</grouping>
+    <intervals type="continuous">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>range</display>
+    <break-apart>yes</break-apart>
+    <value-type>real</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>scalar</type>
+     <denormal-type>real</denormal-type>
+     <width>1</width>
+     <group>0</group>
+     <missing-values>subst-median</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <offset>0</offset>
+     <scale>1</scale>
+     <power-exponent>1</power-exponent>
+     <log-base>10</log-base>
+     <clamp-lo>0</clamp-lo>
+     <clamp-hi>0</clamp-hi>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="real">31.733491124260354</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="real">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="real">72</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="real">28</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="real">1</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.08875739644970414</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="real">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="real">72</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="InternetService" index="5">
+   <state>independent</state>
+   <original-name>InternetService</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="discrete">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>2</width>
+     <group>0</group>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram>
+       <hist-entry>
+        <value type="string">DSL</value>
+        <weighted>1448</weighted>
+        <unweighted>1448</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Fiber optic</value>
+        <weighted>1859</weighted>
+        <unweighted>1859</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">No</value>
+        <weighted>918</weighted>
+        <unweighted>918</unweighted>
+       </hist-entry>
+      </histogram>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="string">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="string">DSL</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="string">Fiber optic</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="string">Fiber optic</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.44</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="string">DSL</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+     <normalize-value-list>
+      <normalize-value>
+       <value name="nv-value" type="string">DSL</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0</nv-rank>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Fiber optic</value>
+       <nv-load>false</nv-load>
+       <nv-use>false</nv-use>
+       <nv-group>0</nv-group>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">No</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0.5</nv-rank>
+      </normalize-value>
+     </normalize-value-list>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="OnlineSecurity" index="6">
+   <state>independent</state>
+   <original-name>OnlineSecurity</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="discrete">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>2</width>
+     <group>0</group>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram>
+       <hist-entry>
+        <value type="string">No</value>
+        <weighted>2130</weighted>
+        <unweighted>2130</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">No internet service</value>
+        <weighted>918</weighted>
+        <unweighted>918</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Yes</value>
+        <weighted>1177</weighted>
+        <unweighted>1177</unweighted>
+       </hist-entry>
+      </histogram>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="string">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.5041420118343195</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+     <normalize-value-list>
+      <normalize-value>
+       <value name="nv-value" type="string">No</value>
+       <nv-load>false</nv-load>
+       <nv-use>false</nv-use>
+       <nv-group>0</nv-group>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">No internet service</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0</nv-rank>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Yes</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0.5</nv-rank>
+      </normalize-value>
+     </normalize-value-list>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="OnlineBackup" index="7">
+   <state>independent</state>
+   <original-name>OnlineBackup</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="discrete">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>2</width>
+     <group>0</group>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram>
+       <hist-entry>
+        <value type="string">No</value>
+        <weighted>1874</weighted>
+        <unweighted>1874</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">No internet service</value>
+        <weighted>918</weighted>
+        <unweighted>918</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Yes</value>
+        <weighted>1433</weighted>
+        <unweighted>1433</unweighted>
+       </hist-entry>
+      </histogram>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="string">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="string">No internet service</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.44355029585798816</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+     <normalize-value-list>
+      <normalize-value>
+       <value name="nv-value" type="string">No</value>
+       <nv-load>false</nv-load>
+       <nv-use>false</nv-use>
+       <nv-group>0</nv-group>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">No internet service</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0</nv-rank>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Yes</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0.5</nv-rank>
+      </normalize-value>
+     </normalize-value-list>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="DeviceProtection" index="8">
+   <state>independent</state>
+   <original-name>DeviceProtection</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="discrete">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>2</width>
+     <group>0</group>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram>
+       <hist-entry>
+        <value type="string">No</value>
+        <weighted>1882</weighted>
+        <unweighted>1882</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">No internet service</value>
+        <weighted>918</weighted>
+        <unweighted>918</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Yes</value>
+        <weighted>1425</weighted>
+        <unweighted>1425</unweighted>
+       </hist-entry>
+      </histogram>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="string">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="string">No internet service</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.4454437869822485</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+     <normalize-value-list>
+      <normalize-value>
+       <value name="nv-value" type="string">No</value>
+       <nv-load>false</nv-load>
+       <nv-use>false</nv-use>
+       <nv-group>0</nv-group>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">No internet service</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0</nv-rank>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Yes</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0.5</nv-rank>
+      </normalize-value>
+     </normalize-value-list>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="TechSupport" index="9">
+   <state>independent</state>
+   <original-name>TechSupport</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="discrete">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>2</width>
+     <group>0</group>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram>
+       <hist-entry>
+        <value type="string">No</value>
+        <weighted>2093</weighted>
+        <unweighted>2093</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">No internet service</value>
+        <weighted>918</weighted>
+        <unweighted>918</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Yes</value>
+        <weighted>1214</weighted>
+        <unweighted>1214</unweighted>
+       </hist-entry>
+      </histogram>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="string">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="string">No internet service</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.49538461538461537</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+     <normalize-value-list>
+      <normalize-value>
+       <value name="nv-value" type="string">No</value>
+       <nv-load>false</nv-load>
+       <nv-use>false</nv-use>
+       <nv-group>0</nv-group>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">No internet service</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0</nv-rank>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Yes</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0.5</nv-rank>
+      </normalize-value>
+     </normalize-value-list>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="StreamingTV" index="10">
+   <state>independent</state>
+   <original-name>StreamingTV</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="discrete">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>2</width>
+     <group>0</group>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram>
+       <hist-entry>
+        <value type="string">No</value>
+        <weighted>1718</weighted>
+        <unweighted>1718</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">No internet service</value>
+        <weighted>918</weighted>
+        <unweighted>918</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Yes</value>
+        <weighted>1589</weighted>
+        <unweighted>1589</unweighted>
+       </hist-entry>
+      </histogram>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="string">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="string">No internet service</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.4066272189349112</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+     <normalize-value-list>
+      <normalize-value>
+       <value name="nv-value" type="string">No</value>
+       <nv-load>false</nv-load>
+       <nv-use>false</nv-use>
+       <nv-group>0</nv-group>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">No internet service</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0</nv-rank>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Yes</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0.5</nv-rank>
+      </normalize-value>
+     </normalize-value-list>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="StreamingMovies" index="11">
+   <state>independent</state>
+   <original-name>StreamingMovies</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="discrete">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>2</width>
+     <group>0</group>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram>
+       <hist-entry>
+        <value type="string">No</value>
+        <weighted>1669</weighted>
+        <unweighted>1669</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">No internet service</value>
+        <weighted>918</weighted>
+        <unweighted>918</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Yes</value>
+        <weighted>1638</weighted>
+        <unweighted>1638</unweighted>
+       </hist-entry>
+      </histogram>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="string">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="string">No internet service</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.3950295857988166</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+     <normalize-value-list>
+      <normalize-value>
+       <value name="nv-value" type="string">No</value>
+       <nv-load>false</nv-load>
+       <nv-use>false</nv-use>
+       <nv-group>0</nv-group>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">No internet service</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0</nv-rank>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Yes</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0.5</nv-rank>
+      </normalize-value>
+     </normalize-value-list>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="Contract" index="12">
+   <state>independent</state>
+   <original-name>Contract</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="discrete">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>2</width>
+     <group>0</group>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram>
+       <hist-entry>
+        <value type="string">Month-to-month</value>
+        <weighted>2354</weighted>
+        <unweighted>2354</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">One year</value>
+        <weighted>865</weighted>
+        <unweighted>865</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Two year</value>
+        <weighted>1006</weighted>
+        <unweighted>1006</unweighted>
+       </hist-entry>
+      </histogram>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="string">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="string">Month-to-month</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="string">Two year</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="string">Month-to-month</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="string">Month-to-month</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.5571597633136095</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="string">Month-to-month</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="string">Two year</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+     <normalize-value-list>
+      <normalize-value>
+       <value name="nv-value" type="string">Month-to-month</value>
+       <nv-load>false</nv-load>
+       <nv-use>false</nv-use>
+       <nv-group>0</nv-group>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">One year</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0</nv-rank>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Two year</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0.5</nv-rank>
+      </normalize-value>
+     </normalize-value-list>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="PaperlessBilling" index="13">
+   <state>independent</state>
+   <original-name>PaperlessBilling</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="discrete">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <group>0</group>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram>
+       <hist-entry>
+        <value type="string">No</value>
+        <weighted>1738</weighted>
+        <unweighted>1738</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Yes</value>
+        <weighted>2487</weighted>
+        <unweighted>2487</unweighted>
+       </hist-entry>
+      </histogram>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="string">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.5886390532544379</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="string">No</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="string">Yes</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+     <normalize-value-list>
+      <normalize-value>
+       <value name="nv-value" type="string">No</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0</nv-rank>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Yes</value>
+       <nv-load>false</nv-load>
+       <nv-use>false</nv-use>
+       <nv-group>0</nv-group>
+      </normalize-value>
+     </normalize-value-list>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="PaymentMethod" index="14">
+   <state>independent</state>
+   <original-name>PaymentMethod</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="discrete">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>3</width>
+     <group>0</group>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram>
+       <hist-entry>
+        <value type="string">Bank transfer (automatic)</value>
+        <weighted>886</weighted>
+        <unweighted>886</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Credit card (automatic)</value>
+        <weighted>888</weighted>
+        <unweighted>888</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Electronic check</value>
+        <weighted>1445</weighted>
+        <unweighted>1445</unweighted>
+       </hist-entry>
+       <hist-entry>
+        <value type="string">Mailed check</value>
+        <weighted>1006</weighted>
+        <unweighted>1006</unweighted>
+       </hist-entry>
+      </histogram>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="string">0</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="string">Bank transfer (automatic)</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="string">Mailed check</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="string">Electronic check</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="string">Electronic check</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.34201183431952664</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="string">Bank transfer (automatic)</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="string">Mailed check</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+     <normalize-value-list>
+      <normalize-value>
+       <value name="nv-value" type="string">Bank transfer (automatic)</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0</nv-rank>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Credit card (automatic)</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0.3333333333333333</nv-rank>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Electronic check</value>
+       <nv-load>false</nv-load>
+       <nv-use>false</nv-use>
+       <nv-group>0</nv-group>
+      </normalize-value>
+      <normalize-value>
+       <value name="nv-value" type="string">Mailed check</value>
+       <nv-group>0</nv-group>
+       <nv-rank>0.6666666666666666</nv-rank>
+      </normalize-value>
+     </normalize-value-list>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="MonthlyCharges" index="15">
+   <state>independent</state>
+   <original-name>MonthlyCharges</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>continuous</grouping>
+    <intervals type="continuous">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>range</display>
+    <break-apart>yes</break-apart>
+    <value-type>real</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>scalar</type>
+     <denormal-type>real</denormal-type>
+     <width>1</width>
+     <group>0</group>
+     <missing-values>subst-median</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <offset>0</offset>
+     <scale>1</scale>
+     <power-exponent>1</power-exponent>
+     <log-base>10</log-base>
+     <clamp-lo>0</clamp-lo>
+     <clamp-hi>0</clamp-hi>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="real">64.61169230769227</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="real">18.4</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="real">118.75</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="real">70.3</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="real">20.05</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.008757396449704143</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="real">18.4</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="real">118.75</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="TotalCharges" index="16">
+   <state>independent</state>
+   <original-name>TotalCharges</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>continuous</grouping>
+    <intervals type="continuous">50</intervals>
+    <signifigance>0.05</signifigance>
+    <display>range</display>
+    <break-apart>yes</break-apart>
+    <value-type>real</value-type>
+    <normalize>
+     <custom>true</custom>
+     <type>scalar</type>
+     <denormal-type>real</denormal-type>
+     <width>1</width>
+     <group>0</group>
+     <missing-values>subst-median</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <offset>0</offset>
+     <scale>1</scale>
+     <power-exponent>1</power-exponent>
+     <log-base>10</log-base>
+     <clamp-lo>0</clamp-lo>
+     <clamp-hi>0</clamp-hi>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics>
+       <data-summary-statistic name="mean">
+        <valid>true</valid>
+        <value type="real">2218.2521687603735</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="minReal">
+        <valid>true</valid>
+        <value type="real">18.8</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="maxReal">
+        <valid>true</valid>
+        <value type="real">8672.45</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="median">
+        <valid>true</valid>
+        <value type="real">1346.9</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="mode1">
+        <valid>true</valid>
+        <value type="real">19.65</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="peak1">
+        <valid>true</valid>
+        <value type="real">0.0014201183431952662</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_minReal">
+        <valid>true</valid>
+        <value type="real">18.8</value>
+       </data-summary-statistic>
+       <data-summary-statistic name="finite_maxReal">
+        <valid>true</valid>
+        <value type="real">8672.45</value>
+       </data-summary-statistic>
+      </data-summary-statistics>
+     </data-summary>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+ </attribute-info>
+ <series>
+  <series-data/>
+ </series>
+ <neural-model-list best="0" current="0">
+  <neural-model model-id="MLP neural net" default-activation-function="sigmoid" default-threshold="0">
+   <info top-string="26/1:logistic">
+    <ss0>4921.060631218476</ss0>
+    <df0>4224</df0>
+    <ssr>1368.542726563997</ssr>
+    <dfr>26</dfr>
+    <sse>3552.5179046544795</sse>
+    <dfe>4198</dfe>
+    <ANOVA classifier="true">
+     <rows separated="true">
+      <total>4225</total>
+      <correct>3384</correct>
+     </rows>
+     <ss0>4921.060631218476</ss0>
+     <df0>4224</df0>
+     <ssr>1368.542726563997</ssr>
+     <dfr>26</dfr>
+     <sse>3552.5179046544795</sse>
+     <dfe>4198</dfe>
+     <concordant>2965779</concordant>
+     <discordant>545263</discordant>
+     <tied>14</tied>
+     <auc>0.751936221789342</auc>
+     <measurement name="wald" distribution="chi-squared" test="wald">
+      <df>26</df>
+      <statistic>5.34850603666219e+27</statistic>
+      <p-value>0</p-value>
+      <log-p-value>-2.674253018331095e+27</log-p-value>
+     </measurement>
+     <measurement name="score" distribution="chi-squared" test="score">
+      <df>26</df>
+      <statistic>1182.3897455148926</statistic>
+      <p-value>6.8651565405296675e-233</p-value>
+      <log-p-value>-534.5758678259535</log-p-value>
+     </measurement>
+     <wald>5.34850603666219e+27</wald>
+     <score>1182.3897455148926</score>
+    </ANOVA>
+    <dfg>0</dfg>
+    <sep>0</sep>
+    <loc>0</loc>
+    <abias>0</abias>
+    <select name="iv">0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25</select>
+    <select name="pv">0</select>
+    <vif variable="(&#x5B;SeniorCitizen&#x5D;==1)">0.24282686737576367</vif>
+    <vif variable="(&#x5B;Partner&#x5D;==&apos;Yes&apos;)">0.22743799161138709</vif>
+    <vif variable="(&#x5B;Dependents&#x5D;==&apos;Yes&apos;)">0.23035706978070541</vif>
+    <vif variable="&#x5B;tenure&#x5D;">0.14465630293754242</vif>
+    <vif variable="(&#x5B;InternetService&#x5D;==&apos;DSL&apos;)">0.18624320657762122</vif>
+    <vif variable="(&#x5B;InternetService&#x5D;==&apos;No&apos;)">0.016347599486196775</vif>
+    <vif variable="(&#x5B;OnlineSecurity&#x5D;==&apos;No internet service&apos;)">0.01634759948619678</vif>
+    <vif variable="(&#x5B;OnlineSecurity&#x5D;==&apos;Yes&apos;)">0.23130166576486746</vif>
+    <vif variable="(&#x5B;OnlineBackup&#x5D;==&apos;No internet service&apos;)">0.016347599486196785</vif>
+    <vif variable="(&#x5B;OnlineBackup&#x5D;==&apos;Yes&apos;)">0.23258549327382427</vif>
+    <vif variable="(&#x5B;DeviceProtection&#x5D;==&apos;No internet service&apos;)">0.016347599486196816</vif>
+    <vif variable="(&#x5B;DeviceProtection&#x5D;==&apos;Yes&apos;)">0.2273092300389574</vif>
+    <vif variable="(&#x5B;TechSupport&#x5D;==&apos;No internet service&apos;)">0.016347599486196848</vif>
+    <vif variable="(&#x5B;TechSupport&#x5D;==&apos;Yes&apos;)">0.22673207914710622</vif>
+    <vif variable="(&#x5B;StreamingTV&#x5D;==&apos;No internet service&apos;)">0.01634759948619683</vif>
+    <vif variable="(&#x5B;StreamingTV&#x5D;==&apos;Yes&apos;)">0.21659953169673724</vif>
+    <vif variable="(&#x5B;StreamingMovies&#x5D;==&apos;No internet service&apos;)">0.016347599486196834</vif>
+    <vif variable="(&#x5B;StreamingMovies&#x5D;==&apos;Yes&apos;)">0.2182422739070129</vif>
+    <vif variable="(&#x5B;Contract&#x5D;==&apos;One year&apos;)">0.22532615171935683</vif>
+    <vif variable="(&#x5B;Contract&#x5D;==&apos;Two year&apos;)">0.18865646383343124</vif>
+    <vif variable="(&#x5B;PaperlessBilling&#x5D;==&apos;No&apos;)">0.24202230553535312</vif>
+    <vif variable="(&#x5B;PaymentMethod&#x5D;==&apos;Bank transfer (automatic)&apos;)">0.22739786046621244</vif>
+    <vif variable="(&#x5B;PaymentMethod&#x5D;==&apos;Credit card (automatic)&apos;)">0.22607895277617132</vif>
+    <vif variable="(&#x5B;PaymentMethod&#x5D;==&apos;Mailed check&apos;)">0.2200345589848818</vif>
+    <vif variable="&#x5B;MonthlyCharges&#x5D;">0.0753920450770642</vif>
+    <vif variable="&#x5B;TotalCharges&#x5D;">0.11032160192238878</vif>
+    <vector name="dmodel" type="real" dim="27">0.10680541340529175 0.098773610376966 0.11415682911201427 0.007555511518196949 0.25573404322741117 0.05937087019295949 0.05937087019295974 0.11350123879564507 0.05937087019296095 0.1036475304784176 0.05937087019296127 0.10688903899789905 0.05937087019296123 0.11624169922135003 0.05937087019296096 0.12593533013893377 0.05937087019296005 0.12107274436260772 0.13901882641007257 0.21675771352231665 0.094396369431828 0.12253117418503477 0.12425290669814656 0.12314273577728205 0.007389869867297404 8.658472047428667e-05 0.5482890014515946</vector>
+    <vector name="smodel" type="real" dim="27">0.056339011061397104 0.008313394173357894 -0.08052057292868484 -1.3088181170694164 -0.5802131736440976 -0.10120979139911347 -0.1707072033944896 -0.14677468507768546 -0.21357988038203088 -0.094260977098642 -0.2039060140357229 -0.02719772639765224 -0.15910785622716633 -0.16000742583038932 -0.1098738014158042 0.15885779662391258 -0.06820557130556036 0.2480687368397959 -0.2660318345775993 -0.5315798265505621 -0.17693560996052746 -0.12795506933379197 -0.11472847944523809 -0.11693662983709621 -0.5233534735423124 0.6651782141573103 0</vector>
+    <vector name="sdmodel" type="real" dim="27">0.03987269387454493 0.0493333336433701 0.052254306563076086 0.18447654469419825 0.12139071079399319 0.02448705411686957 0.024487054116869675 0.05088865856770992 0.024487054116870174 0.049075467987314714 0.024487054116870306 0.050541055668258957 0.02448705411687029 0.05260794767604092 0.024487054116870178 0.061010828866359244 0.024487054116869803 0.05899649873928132 0.05610169708352041 0.09233337886139933 0.04645610114221823 0.04988802996089075 0.05063092152264865 0.05245573360129736 0.2209489405910687 0.19360310770375672 -1</vector>
+    <cmodel>111111111111111111111111111</cmodel>
+    <bmodel>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</bmodel>
+    <xmodel>00000000000000000000000000</xmodel>
+   </info>
+   <nn-input node-id="i-1" input-name=""/>
+   <nn-input node-id="i-2" input-name=""/>
+   <nn-input node-id="i-3" input-name=""/>
+   <nn-input node-id="i-4" input-name=""/>
+   <nn-input node-id="i-5" input-name=""/>
+   <nn-input node-id="i-6" input-name=""/>
+   <nn-input node-id="i-7" input-name=""/>
+   <nn-input node-id="i-8" input-name=""/>
+   <nn-input node-id="i-9" input-name=""/>
+   <nn-input node-id="i-10" input-name=""/>
+   <nn-input node-id="i-11" input-name=""/>
+   <nn-input node-id="i-12" input-name=""/>
+   <nn-input node-id="i-13" input-name=""/>
+   <nn-input node-id="i-14" input-name=""/>
+   <nn-input node-id="i-15" input-name=""/>
+   <nn-input node-id="i-16" input-name=""/>
+   <nn-input node-id="i-17" input-name=""/>
+   <nn-input node-id="i-18" input-name=""/>
+   <nn-input node-id="i-19" input-name=""/>
+   <nn-input node-id="i-20" input-name=""/>
+   <nn-input node-id="i-21" input-name=""/>
+   <nn-input node-id="i-22" input-name=""/>
+   <nn-input node-id="i-23" input-name=""/>
+   <nn-input node-id="i-24" input-name=""/>
+   <nn-input node-id="i-25" input-name=""/>
+   <nn-input node-id="i-26" input-name=""/>
+   <nn-output node-id="o-1" activation-function="softmax0" bias="2.226604234439044" output-name=" ">
+    <nn-connection from-node="i-1" weight="0.1509130881949094"/>
+    <nn-connection from-node="i-2" weight="0.01664480983436937"/>
+    <nn-connection from-node="i-3" weight="-0.175908434890926"/>
+    <nn-connection from-node="i-4" weight="-0.05360459442220797"/>
+    <nn-connection from-node="i-5" weight="-1.2223362056230371"/>
+    <nn-connection from-node="i-6" weight="-0.24539143658255017"/>
+    <nn-connection from-node="i-7" weight="-0.4138936094707762"/>
+    <nn-connection from-node="i-8" weight="-0.32736387731643973"/>
+    <nn-connection from-node="i-9" weight="-0.5178419295955081"/>
+    <nn-connection from-node="i-10" weight="-0.19907945654807202"/>
+    <nn-connection from-node="i-11" weight="-0.4943868475603435"/>
+    <nn-connection from-node="i-12" weight="-0.057520342603342066"/>
+    <nn-connection from-node="i-13" weight="-0.3857700413311611"/>
+    <nn-connection from-node="i-14" weight="-0.35354990810693265"/>
+    <nn-connection from-node="i-15" weight="-0.2663980391569723"/>
+    <nn-connection from-node="i-16" weight="0.3279058723623902"/>
+    <nn-connection from-node="i-17" weight="-0.16536999922866777"/>
+    <nn-connection from-node="i-18" weight="0.5090872068949068"/>
+    <nn-connection from-node="i-19" weight="-0.6592212954919704"/>
+    <nn-connection from-node="i-20" weight="-1.2479130426998788"/>
+    <nn-connection from-node="i-21" weight="-0.35952391166768216"/>
+    <nn-connection from-node="i-22" weight="-0.3142734820494629"/>
+    <nn-connection from-node="i-23" weight="-0.2815541693380511"/>
+    <nn-connection from-node="i-24" weight="-0.2745152059099071"/>
+    <nn-connection from-node="i-25" weight="-0.017504107753264775"/>
+    <nn-connection from-node="i-26" weight="0.0002974862873922676"/>
+   </nn-output>
+  </neural-model>
+ </neural-model-list>
+</predictive-model>
