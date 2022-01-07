@@ -98,7 +98,7 @@
    </limits>
   </parameter>
   <parameter name="CreationStatement" read-only="true">
-   <value name="val" type="string">CREATE MINING MODEL &#x5B;NoCodeML&#x5D;.&#x5B;Dataset_Stack&#x5D; (&#x5B;Discontinued&#x5D; DISCRETIZED(DISCRETE, 50) PREDICT SET NULL AS NULL NORMALIZE TYPE FANOUT VALUES &apos;No&apos; LOAD FALSE,&apos;Yes&apos; END END,&#x5B;Dataset_Tree_Inst&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_Bagging&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_Boosting&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_DL&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_Reg&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_RndForest&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_Regul&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END) USING &#x5B;LogisticRegression&#x5D; (DataSource=&apos;&#x5B;NoCodeML&#x5D;.&#x5B;&#x23;T031d193323a345ba96e4c5788f08eb9d.tmp&#x5D;&apos;,SequenceMethod=&apos;None&apos;,SubSequencer=False,Resubstitute=True,HitRange=0,RandomSeed=1,MaxIteration=2000,LinkFunction=&apos;logistic&apos;,ComputeErrors=True,OddsConfidence=0.95,Optimizer=&apos;NewtonRaphson&apos;,GradEpsilon=1E-08,LineEpsilon=0.9,ExcludeIVCollinearity=1E-09,Intercept=&apos;False&apos;) FROM &#x5B;NoCodeML&#x5D;.&#x5B;&#x23;T031d193323a345ba96e4c5788f08eb9d.tmp&#x5D;</value>
+   <value name="val" type="string">CREATE MINING MODEL &#x5B;NoCodeML&#x5D;.&#x5B;Dataset_Stack&#x5D; (&#x5B;Discontinued&#x5D; DISCRETIZED(DISCRETE, 50) PREDICT SET NULL AS NULL NORMALIZE TYPE FANOUT VALUES &apos;No&apos; LOAD FALSE,&apos;Yes&apos; END END,&#x5B;Dataset_Tree_Inst&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_Bagging&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_Boosting&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_DL&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_Reg&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_RndForest&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END,&#x5B;Dataset_Regul&#x5D; DISCRETIZED(CONTINUOUS, 50) SET NULL AS median NORMALIZE TYPE scalar END) USING &#x5B;LogisticRegression&#x5D; (DataSource=&apos;&#x5B;NoCodeML&#x5D;.&#x5B;&#x23;Tcb58dec4c2be492681c8d1c9ec243ae4.tmp&#x5D;&apos;,SequenceMethod=&apos;None&apos;,SubSequencer=False,Resubstitute=True,HitRange=0,RandomSeed=1,MaxIteration=2000,LinkFunction=&apos;logistic&apos;,ComputeErrors=True,OddsConfidence=0.95,Optimizer=&apos;NewtonRaphson&apos;,GradEpsilon=1E-08,LineEpsilon=0.9,ExcludeIVCollinearity=1E-09,Intercept=&apos;False&apos;) FROM &#x5B;NoCodeML&#x5D;.&#x5B;&#x23;Tcb58dec4c2be492681c8d1c9ec243ae4.tmp&#x5D;</value>
    <limits>
     <value name="min" type="missing">Missing</value>
     <value name="def" type="missing">Missing</value>
@@ -106,7 +106,7 @@
    </limits>
   </parameter>
   <parameter name="TrainStatement" read-only="true">
-   <value name="val" type="string">INSERT INTO &#x5B;NoCodeML&#x5D;.&#x5B;Dataset_Stack&#x5D; FROM (SELECT &#x5B;Discontinued&#x5D;,&#x5B;Dataset_Tree_Inst&#x5D;,&#x5B;Dataset_Bagging&#x5D;,&#x5B;Dataset_Boosting&#x5D;,&#x5B;Dataset_DL&#x5D;,&#x5B;Dataset_Reg&#x5D;,&#x5B;Dataset_RndForest&#x5D;,&#x5B;Dataset_Regul&#x5D; FROM TABLE &#x5B;NoCodeML&#x5D;.&#x5B;&#x23;T031d193323a345ba96e4c5788f08eb9d.tmp&#x5D;)&amp;</value>
+   <value name="val" type="string">INSERT INTO &#x5B;NoCodeML&#x5D;.&#x5B;Dataset_Stack&#x5D; FROM (SELECT &#x5B;Discontinued&#x5D;,&#x5B;Dataset_Tree_Inst&#x5D;,&#x5B;Dataset_Bagging&#x5D;,&#x5B;Dataset_Boosting&#x5D;,&#x5B;Dataset_DL&#x5D;,&#x5B;Dataset_Reg&#x5D;,&#x5B;Dataset_RndForest&#x5D;,&#x5B;Dataset_Regul&#x5D; FROM TABLE &#x5B;NoCodeML&#x5D;.&#x5B;&#x23;Tcb58dec4c2be492681c8d1c9ec243ae4.tmp&#x5D;)&amp;</value>
    <limits>
     <value name="min" type="missing">Missing</value>
     <value name="def" type="missing">Missing</value>
@@ -234,10 +234,10 @@
    </limits>
   </parameter>
   <parameter name="DataSource" read-only="false">
-   <value name="val" type="string">&#x5B;NoCodeML&#x5D;.&#x5B;&#x23;T031d193323a345ba96e4c5788f08eb9d.tmp&#x5D;</value>
+   <value name="val" type="string">&#x5B;NoCodeML&#x5D;.&#x5B;&#x23;Tcb58dec4c2be492681c8d1c9ec243ae4.tmp&#x5D;</value>
    <limits>
     <value name="min" type="missing">Missing</value>
-    <value name="def" type="string">&#x5B;NoCodeML&#x5D;.&#x5B;&#x23;T031d193323a345ba96e4c5788f08eb9d.tmp&#x5D;</value>
+    <value name="def" type="string">&#x5B;NoCodeML&#x5D;.&#x5B;&#x23;Tcb58dec4c2be492681c8d1c9ec243ae4.tmp&#x5D;</value>
     <value name="max" type="missing">Missing</value>
    </limits>
   </parameter>

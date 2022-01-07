@@ -1,0 +1,3373 @@
+<?xml version="1.0"?>
+<predictive-model name="C:&#x5C;Users&#x5C;adars&#x5C;Documents&#x5C;Altair&#x5C;NoCodeML&#x5C;&#x23;T9e6c6b58b3eb4080921d4fe19b29f069.tmp.kdm" is-valid="true" version="1" prog-id="KnowledgeMODEL.PredictiveModels.Tree.1">
+ <parameters>
+  <parameter name="PruneRequest" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="bool">false</value>
+    <value name="def" type="bool">true</value>
+    <value name="max" type="bool">true</value>
+   </limits>
+  </parameter>
+  <parameter name="RecordCount" read-only="false">
+   <value name="val" type="integer">0</value>
+   <limits>
+    <value name="min" type="integer">0</value>
+    <value name="def" type="integer">0</value>
+    <value name="max" type="integer">134217727</value>
+   </limits>
+  </parameter>
+  <parameter name="UseCount" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">false</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="MemorySoftLimit" read-only="false">
+   <value name="val" type="integer">134217728</value>
+   <limits>
+    <value name="min" type="integer">0</value>
+    <value name="def" type="integer">134217728</value>
+    <value name="max" type="integer">1073741824</value>
+   </limits>
+  </parameter>
+  <parameter name="MemoryHardLimit" read-only="false">
+   <value name="val" type="integer">134217728</value>
+   <limits>
+    <value name="min" type="integer">0</value>
+    <value name="def" type="integer">134217728</value>
+    <value name="max" type="integer">1073741824</value>
+   </limits>
+  </parameter>
+  <parameter name="RecordSelectFirstN" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">false</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="Resubstitute" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">false</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="HitRange" read-only="false">
+   <value name="val" type="real">0</value>
+   <limits>
+    <value name="min" type="real">0</value>
+    <value name="def" type="real">0</value>
+    <value name="max" type="real">1e+38</value>
+   </limits>
+  </parameter>
+  <parameter name="UseRecordCount" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">false</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="SubSequencer" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">false</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="RandomSeed" read-only="false">
+   <value name="val" type="missing">Missing</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="DataDumpFile" read-only="false">
+   <value name="val" type="missing">Missing</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="CreationStatement" read-only="true">
+   <value name="val" type="string">CREATE MINING MODEL &#x5B;NoCodeML&#x5D;.&#x5B;&#x23;T9e6c6b58b3eb4080921d4fe19b29f069.tmp&#x5D; (&#x5B;gender&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 2) SET null AS null DISPLAY Present, &#x5B;SeniorCitizen&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISPLAY Range SET null AS float FORMAT &apos;&apos; ORDERED, &#x5B;Partner&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 2) SET null AS null DISPLAY Present, &#x5B;Dependents&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 2) SET null AS null DISPLAY Present, &#x5B;tenure&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 10) SET null AS float FORMAT &apos;&apos; DISPLAY Range CONTINUOUS, &#x5B;PhoneService&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 2) SET null AS null DISPLAY Present, &#x5B;MultipleLines&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 3) SET null AS null DISPLAY Present, &#x5B;InternetService&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 3) SET null AS null DISPLAY Present, &#x5B;OnlineSecurity&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 3) SET null AS null DISPLAY Present, &#x5B;OnlineBackup&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 3) SET null AS null DISPLAY Present, &#x5B;DeviceProtection&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 3) SET null AS null DISPLAY Present, &#x5B;TechSupport&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 3) SET null AS null DISPLAY Present, &#x5B;StreamingTV&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 3) SET null AS null DISPLAY Present, &#x5B;StreamingMovies&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 3) SET null AS null DISPLAY Present, &#x5B;Contract&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 3) SET null AS null DISPLAY Present, &#x5B;PaperlessBilling&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 2) SET null AS null DISPLAY Present, &#x5B;PaymentMethod&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 4) SET null AS null DISPLAY Present, &#x5B;MonthlyCharges&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 10) SET null AS float FORMAT &apos;&apos; DISPLAY Range CONTINUOUS, &#x5B;TotalCharges&#x5D; SIGNIFICANCE 0.05 MAX BRANCHES 0 BREAK true DISCRETIZED (THRESHOLDS, 10) SET null AS float FORMAT &apos;&apos; DISPLAY Range CONTINUOUS, &#x5B;Discontinued&#x5D; PREDICT) Using  &#x5B;Tree&#x5D; (GrowAutomaticMaxDepth=1,MultiTree=false,Algorithm=&apos;KnowledgeSEEKER&apos;,Measure=&apos;EntropyVariance&apos;,ClusterMethod=&apos;Cluster&apos;,DiscreteFilterThreshold=&apos;0.01&apos;,ContinuousFilterThreshold=&apos;0.01&apos;,UserBonferroniAdjustment=&apos;1&apos;,GrowAutomaticStopSize=&apos;3&apos;,MinWeight=&apos;1&apos;,AsPercent=&apos;True&apos;,IgnoreExpressions=true,BreakApartThresholdFactor=0.98,DataSource=&apos;&#x5B;NoCodeML&#x5D;.&#x5B;Dataset&#x5D;&apos;) FROM &#x5B;NoCodeML&#x5D;.&#x5B;Dataset&#x5D;</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TrainStatement" read-only="true">
+   <value name="val" type="string">alter model &#x5B;NoCodeML&#x5D;.&#x5B;&#x23;T9e6c6b58b3eb4080921d4fe19b29f069.tmp&#x5D; define parameter GrowAutomaticMaxDepth = 2, define parameter GrowAutomaticStopSize = 0, define parameter MinWeight = 1, define parameter AsPercent = True, define parameter AllowConsecutiveSplits = False, define parameter Algorithm = &apos;KnowledgeSEEKER&apos;, define parameter KeepSplitTable = 0, define parameter KeepRootSplits = 0, define parameter KeepSubSplits = 0, define parameter ValidationHoldback = 0, define parameter MultiTree = false, define parameter PruneRequest = false&#x3B;insert into model &#x5B;NoCodeML&#x5D;.&#x5B;&#x23;T9e6c6b58b3eb4080921d4fe19b29f069.tmp&#x5D; where node_unique_name=&apos;x&apos; select &#x5B;gender&#x5D;, &#x5B;SeniorCitizen&#x5D;, &#x5B;Partner&#x5D;, &#x5B;Dependents&#x5D;, &#x5B;tenure&#x5D;, &#x5B;PhoneService&#x5D;, &#x5B;MultipleLines&#x5D;, &#x5B;InternetService&#x5D;, &#x5B;OnlineSecurity&#x5D;, &#x5B;OnlineBackup&#x5D;, &#x5B;DeviceProtection&#x5D;, &#x5B;TechSupport&#x5D;, &#x5B;StreamingTV&#x5D;, &#x5B;StreamingMovies&#x5D;, &#x5B;Contract&#x5D;, &#x5B;PaperlessBilling&#x5D;, &#x5B;PaymentMethod&#x5D;, &#x5B;MonthlyCharges&#x5D;, &#x5B;TotalCharges&#x5D;, &#x5B;Discontinued&#x5D; from table &#x5B;NoCodeML&#x5D;.&#x5B;Dataset&#x5D;</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="Description" read-only="true">
+   <value name="val" type="missing">Missing</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TestExplained" read-only="true">
+   <value name="val" type="missing">Missing</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="Algorithm" read-only="false">
+   <value name="val" type="string">KnowledgeSEEKER</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">KnowledgeSEEKER</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="Measure" read-only="false">
+   <value name="val" type="string">EntropyVariance</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">EntropyVariance</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="Accuracy" read-only="true">
+   <value name="val" type="real">0</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="ErrorRate" read-only="true">
+   <value name="val" type="real">0</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="MultiTree" read-only="false">
+   <value name="val" type="bool">false</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">false</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="VoteMethod" read-only="false">
+   <value name="val" type="string">best</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">best</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="PruneMethod" read-only="false">
+   <value name="val" type="string">none</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">none</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="BestPruneLevel" read-only="false">
+   <value name="val" type="integer">0</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="PruneLevel" read-only="false">
+   <value name="val" type="integer">0</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="PruneLimit" read-only="false">
+   <value name="val" type="missing">Missing</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="PruneList" read-only="true">
+   <value name="val" type="string"></value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="ActiveNodeCount" read-only="true">
+   <value name="val" type="integer">4</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TotalNodeCount" read-only="true">
+   <value name="val" type="integer">4</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="MaxDepth" read-only="true">
+   <value name="val" type="integer">2</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="TotalLeafCount" read-only="true">
+   <value name="val" type="integer">3</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="PastePrune" read-only="false">
+   <value name="val" type="missing">Missing</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="GrowAutomaticMaxDepth" read-only="false">
+   <value name="val" type="string">5</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="integer">1</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="ClusterMethod" read-only="false">
+   <value name="val" type="string">Cluster</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">Cluster</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="DiscreteFilterThreshold" read-only="false">
+   <value name="val" type="string">0.01</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">0.01</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="ContinuousFilterThreshold" read-only="false">
+   <value name="val" type="string">0.01</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">0.01</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="UserBonferroniAdjustment" read-only="false">
+   <value name="val" type="string">1</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">1</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="GrowAutomaticStopSize" read-only="false">
+   <value name="val" type="string">3</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">3</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="MinWeight" read-only="false">
+   <value name="val" type="string">1</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">1</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="AsPercent" read-only="false">
+   <value name="val" type="string">True</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">True</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="IgnoreExpressions" read-only="false">
+   <value name="val" type="bool">true</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="bool">true</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="BreakApartThresholdFactor" read-only="false">
+   <value name="val" type="real">0.98</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="real">0.98</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="DataSource" read-only="false">
+   <value name="val" type="string">&#x5B;NoCodeML&#x5D;.&#x5B;Dataset&#x5D;</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">&#x5B;NoCodeML&#x5D;.&#x5B;Dataset&#x5D;</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="_TreatmentAttributes" read-only="false">
+   <value name="val" type="string">&lt;ArrayOfTreatmentAttributes xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;/&gt;&#x0A;</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="string">&lt;ArrayOfTreatmentAttributes xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;/&gt;&#x0A;</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="AllowConsecutiveSplits" read-only="false">
+   <value name="val" type="string">False</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="KeepSplitTable" read-only="false">
+   <value name="val" type="integer">0</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="KeepRootSplits" read-only="false">
+   <value name="val" type="string">0</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="KeepSubSplits" read-only="false">
+   <value name="val" type="string">0</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="ValidationHoldback" read-only="false">
+   <value name="val" type="integer">0</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+  <parameter name="PreserveSplits" read-only="false">
+   <value name="val" type="string">False</value>
+   <limits>
+    <value name="min" type="missing">Missing</value>
+    <value name="def" type="missing">Missing</value>
+    <value name="max" type="missing">Missing</value>
+   </limits>
+  </parameter>
+ </parameters>
+ <variables class="independent">
+  <variable name="gender">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="SeniorCitizen">
+   <use>false</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>rank-dense</type>
+    <denormal-type>real</denormal-type>
+    <width>1</width>
+    <missing-values>float</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>real</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="Partner">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="Dependents">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="tenure">
+   <use>false</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>scalar</type>
+    <denormal-type>real</denormal-type>
+    <width>1</width>
+    <missing-values>float</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <offset>0</offset>
+    <scale>0</scale>
+    <power-exponent>1</power-exponent>
+    <log-base>10</log-base>
+    <clamp-lo>0</clamp-lo>
+    <clamp-hi>0</clamp-hi>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>real</denormal-type>
+   <data-type>continuous</data-type>
+  </variable>
+  <variable name="PhoneService">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="MultipleLines">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="InternetService">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="OnlineSecurity">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="OnlineBackup">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="DeviceProtection">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="TechSupport">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="StreamingTV">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="StreamingMovies">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="Contract">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="PaperlessBilling">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="PaymentMethod">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+  <variable name="MonthlyCharges">
+   <use>false</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>scalar</type>
+    <denormal-type>real</denormal-type>
+    <width>1</width>
+    <missing-values>float</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <offset>0</offset>
+    <scale>0</scale>
+    <power-exponent>1</power-exponent>
+    <log-base>10</log-base>
+    <clamp-lo>0</clamp-lo>
+    <clamp-hi>0</clamp-hi>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>real</denormal-type>
+   <data-type>continuous</data-type>
+  </variable>
+  <variable name="TotalCharges">
+   <use>false</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>scalar</type>
+    <denormal-type>real</denormal-type>
+    <width>1</width>
+    <missing-values>float</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <offset>0</offset>
+    <scale>0</scale>
+    <power-exponent>1</power-exponent>
+    <log-base>10</log-base>
+    <clamp-lo>0</clamp-lo>
+    <clamp-hi>0</clamp-hi>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>real</denormal-type>
+   <data-type>continuous</data-type>
+  </variable>
+ </variables>
+ <variables class="dependent">
+  <variable name="Discontinued">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+ </variables>
+ <variables class="predicted">
+  <variable name="Discontinued">
+   <use>true</use>
+   <base>-1</base>
+   <map name="" type="discrete"/>
+   <normalize>
+    <custom>false</custom>
+    <type>discrete</type>
+    <denormal-type>string</denormal-type>
+    <width>1</width>
+    <missing-values>use</missing-values>
+    <distribution>normal</distribution>
+    <constraint></constraint>
+    <data-summary>
+     <histogram/>
+     <data-summary-statistics/>
+    </data-summary>
+    <set-value>1</set-value>
+    <res-value>0</res-value>
+    <off-value>0</off-value>
+   </normalize>
+   <weight-type>none</weight-type>
+   <denormal-type>string</denormal-type>
+   <data-type>discrete</data-type>
+  </variable>
+ </variables>
+ <attribute-info>
+  <dv-complexity>250</dv-complexity>
+  <map-collection/>
+  <attribute name="gender" index="0">
+   <state>independent</state>
+   <original-name>gender</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="static">2</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="SeniorCitizen" index="1">
+   <state>independent</state>
+   <original-name>SeniorCitizen</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>ordered</grouping>
+    <intervals type="static">2</intervals>
+    <signifigance>0.05</signifigance>
+    <display>range</display>
+    <break-apart>yes</break-apart>
+    <value-type>real</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>rank-dense</type>
+     <denormal-type>real</denormal-type>
+     <width>1</width>
+     <missing-values>float</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="Partner" index="2">
+   <state>independent</state>
+   <original-name>Partner</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="static">2</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="Dependents" index="3">
+   <state>independent</state>
+   <original-name>Dependents</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="static">2</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="tenure" index="4">
+   <state>independent</state>
+   <original-name>tenure</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>yes</join-active>
+    <update-active>yes</update-active>
+    <sensitive>yes</sensitive>
+    <grouping>continuous</grouping>
+    <intervals type="static">10</intervals>
+    <signifigance>0.05</signifigance>
+    <display>range</display>
+    <break-apart>yes</break-apart>
+    <value-type>real</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>scalar</type>
+     <denormal-type>real</denormal-type>
+     <width>1</width>
+     <missing-values>float</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <offset>0</offset>
+     <scale>1</scale>
+     <power-exponent>1</power-exponent>
+     <log-base>10</log-base>
+     <clamp-lo>0</clamp-lo>
+     <clamp-hi>0</clamp-hi>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="PhoneService" index="5">
+   <state>independent</state>
+   <original-name>PhoneService</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="static">2</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="MultipleLines" index="6">
+   <state>independent</state>
+   <original-name>MultipleLines</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="static">3</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="InternetService" index="7">
+   <state>independent</state>
+   <original-name>InternetService</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="static">3</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="OnlineSecurity" index="8">
+   <state>independent</state>
+   <original-name>OnlineSecurity</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="static">3</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="OnlineBackup" index="9">
+   <state>independent</state>
+   <original-name>OnlineBackup</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="static">3</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="DeviceProtection" index="10">
+   <state>independent</state>
+   <original-name>DeviceProtection</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="static">3</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="TechSupport" index="11">
+   <state>independent</state>
+   <original-name>TechSupport</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="static">3</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="StreamingTV" index="12">
+   <state>independent</state>
+   <original-name>StreamingTV</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="static">3</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="StreamingMovies" index="13">
+   <state>independent</state>
+   <original-name>StreamingMovies</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="static">3</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="Contract" index="14">
+   <state>independent</state>
+   <original-name>Contract</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="static">3</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="PaperlessBilling" index="15">
+   <state>independent</state>
+   <original-name>PaperlessBilling</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="static">2</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="PaymentMethod" index="16">
+   <state>independent</state>
+   <original-name>PaymentMethod</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>unordered</grouping>
+    <intervals type="static">4</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="MonthlyCharges" index="17">
+   <state>independent</state>
+   <original-name>MonthlyCharges</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>continuous</grouping>
+    <intervals type="static">10</intervals>
+    <signifigance>0.05</signifigance>
+    <display>range</display>
+    <break-apart>yes</break-apart>
+    <value-type>real</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>scalar</type>
+     <denormal-type>real</denormal-type>
+     <width>1</width>
+     <missing-values>float</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <offset>0</offset>
+     <scale>1</scale>
+     <power-exponent>1</power-exponent>
+     <log-base>10</log-base>
+     <clamp-lo>0</clamp-lo>
+     <clamp-hi>0</clamp-hi>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="TotalCharges" index="18">
+   <state>independent</state>
+   <original-name>TotalCharges</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>no</update-active>
+    <sensitive>no</sensitive>
+    <grouping>continuous</grouping>
+    <intervals type="static">10</intervals>
+    <signifigance>0.05</signifigance>
+    <display>range</display>
+    <break-apart>yes</break-apart>
+    <value-type>real</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>scalar</type>
+     <denormal-type>real</denormal-type>
+     <width>1</width>
+     <missing-values>float</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <offset>0</offset>
+     <scale>1</scale>
+     <power-exponent>1</power-exponent>
+     <log-base>10</log-base>
+     <clamp-lo>0</clamp-lo>
+     <clamp-hi>0</clamp-hi>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+  <attribute name="Discontinued" index="19">
+   <state>dependent</state>
+   <original-name>Discontinued</original-name>
+   <weight>none</weight>
+   <attribute-settings>
+    <include>yes</include>
+    <insert-active>yes</insert-active>
+    <join-active>no</join-active>
+    <update-active>yes</update-active>
+    <sensitive>no</sensitive>
+    <depends>yes</depends>
+    <grouping>unordered</grouping>
+    <intervals type="static">10</intervals>
+    <signifigance>0.05</signifigance>
+    <display>present</display>
+    <break-apart>yes</break-apart>
+    <value-type>string</value-type>
+    <normalize>
+     <custom>false</custom>
+     <type>discrete</type>
+     <denormal-type>string</denormal-type>
+     <width>1</width>
+     <missing-values>use</missing-values>
+     <distribution>normal</distribution>
+     <constraint></constraint>
+     <data-summary>
+      <histogram/>
+      <data-summary-statistics/>
+     </data-summary>
+     <set-value>1</set-value>
+     <res-value>0</res-value>
+     <off-value>0</off-value>
+    </normalize>
+   </attribute-settings>
+   <woe-remove-pure>yes</woe-remove-pure>
+   <woe-force-monotonic>yes</woe-force-monotonic>
+  </attribute>
+ </attribute-info>
+ <tree-model>
+  <node DV="19">
+   <branch-values type="list"/>
+   <branch-values type="range"/>
+   <branch-frequencies type="list"/>
+   <branch-frequencies type="range"/>
+   <node-dist data="train">
+    <total>7043</total>
+    <discrete-dist>
+     <value name="0.7346301292063041" type="string">No</value>
+     <value name="0.2653698707936959" type="string">Yes</value>
+    </discrete-dist>
+   </node-dist>
+   <node-dist data="test"/>
+   <node-outcome DV="19">
+    <node-dist data="train">
+     <total>7043</total>
+     <discrete-dist>
+      <value name="0.7346301292063041" type="string">No</value>
+      <value name="0.2653698707936959" type="string">Yes</value>
+     </discrete-dist>
+    </node-dist>
+   </node-outcome>
+   <split IV="1">
+    <split-parameters rank="0.9817191812389752" variable="1" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.819482181144619</value>
+     <value name="ratio entropy" type="real">0.01828081876102483</value>
+     <value name="info value" type="real">0.1056211828540469</value>
+    </split-parameters>
+    <node active="false" split-rank="0.9817191812389752" DV="19">
+     <branch-values type="list">
+      <value type="real">0</value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real">0</value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="5901" unweighted="5901"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="5901" unweighted="5901"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>5901</total>
+      <discrete-dist>
+       <value name="0.763938315539739" type="string">No</value>
+       <value name="0.23606168446026096" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>5901</total>
+       <discrete-dist>
+        <value name="0.763938315539739" type="string">No</value>
+        <value name="0.23606168446026096" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9817191812389752" DV="19">
+     <branch-values type="list">
+      <value type="real">1</value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real">1</value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="1142" unweighted="1142"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="1142" unweighted="1142"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>1142</total>
+      <discrete-dist>
+       <value name="0.5831873905429071" type="string">No</value>
+       <value name="0.4168126094570928" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1142</total>
+       <discrete-dist>
+        <value name="0.5831873905429071" type="string">No</value>
+        <value name="0.4168126094570928" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="2">
+    <split-parameters rank="0.9802044996409623" variable="2" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.8182178128778071</value>
+     <value name="ratio entropy" type="real">0.019795500359037654</value>
+     <value name="info value" type="real">0.1187285028426526</value>
+    </split-parameters>
+    <node active="false" split-rank="0.9802044996409623" DV="19">
+     <branch-values type="list">
+      <value type="string">No</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="3641" unweighted="3641"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>3641</total>
+      <discrete-dist>
+       <value name="0.6704202142268607" type="string">No</value>
+       <value name="0.32957978577313923" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>3641</total>
+       <discrete-dist>
+        <value name="0.6704202142268607" type="string">No</value>
+        <value name="0.32957978577313923" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9802044996409623" DV="19">
+     <branch-values type="list">
+      <value type="string">Yes</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="3402" unweighted="3402"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>3402</total>
+      <discrete-dist>
+       <value name="0.8033509700176367" type="string">No</value>
+       <value name="0.1966490299823633" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>3402</total>
+       <discrete-dist>
+        <value name="0.8033509700176367" type="string">No</value>
+        <value name="0.1966490299823633" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="3">
+    <split-parameters rank="0.9749960500174067" variable="3" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.81387010149612</value>
+     <value name="ratio entropy" type="real">0.025003949982593254</value>
+     <value name="info value" type="real">0.15548771504948092</value>
+    </split-parameters>
+    <node active="false" split-rank="0.9749960500174067" DV="19">
+     <branch-values type="list">
+      <value type="string">No</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="4933" unweighted="4933"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>4933</total>
+      <discrete-dist>
+       <value name="0.6872085951753497" type="string">No</value>
+       <value name="0.3127914048246503" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>4933</total>
+       <discrete-dist>
+        <value name="0.6872085951753497" type="string">No</value>
+        <value name="0.3127914048246503" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9749960500174067" DV="19">
+     <branch-values type="list">
+      <value type="string">Yes</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="2110" unweighted="2110"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>2110</total>
+      <discrete-dist>
+       <value name="0.8454976303317535" type="string">No</value>
+       <value name="0.15450236966824646" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>2110</total>
+       <discrete-dist>
+        <value name="0.8454976303317535" type="string">No</value>
+        <value name="0.15450236966824646" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="4">
+    <split-parameters rank="0.8739578445811456" variable="4" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.7295292731287357</value>
+     <value name="ratio entropy" type="real">0.12604215541885444</value>
+     <value name="info value" type="real">0.8199918331123683</value>
+    </split-parameters>
+    <node split-rank="0.8739578445811456" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>0</closed><open>2</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>0</closed><open>2</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="624" unweighted="624"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="624" unweighted="624"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>624</total>
+      <discrete-dist>
+       <value name="0.391025641025641" type="string">No</value>
+       <value name="0.6089743589743589" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>624</total>
+       <discrete-dist>
+        <value name="0.391025641025641" type="string">No</value>
+        <value name="0.6089743589743589" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node split-rank="0.8739578445811456" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>2</closed><open>6</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>2</closed><open>6</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="747" unweighted="747"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="747" unweighted="747"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>747</total>
+      <discrete-dist>
+       <value name="0.5127175368139224" type="string">No</value>
+       <value name="0.48728246318607765" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>747</total>
+       <discrete-dist>
+        <value name="0.5127175368139224" type="string">No</value>
+        <value name="0.48728246318607765" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node split-rank="0.8739578445811456" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>6</closed><open>20</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>6</closed><open>20</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="1436" unweighted="1436"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="1436" unweighted="1436"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>1436</total>
+      <discrete-dist>
+       <value name="0.6594707520891365" type="string">No</value>
+       <value name="0.34052924791086353" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1436</total>
+       <discrete-dist>
+        <value name="0.6594707520891365" type="string">No</value>
+        <value name="0.34052924791086353" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node split-rank="0.8739578445811456" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>20</closed><open>40</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>20</closed><open>40</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="1415" unweighted="1415"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="1415" unweighted="1415"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>1415</total>
+      <discrete-dist>
+       <value name="0.773851590106007" type="string">No</value>
+       <value name="0.22614840989399293" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1415</total>
+       <discrete-dist>
+        <value name="0.773851590106007" type="string">No</value>
+        <value name="0.22614840989399293" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node split-rank="0.8739578445811456" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>40</closed><open>60</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>40</closed><open>60</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="1338" unweighted="1338"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="1338" unweighted="1338"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>1338</total>
+      <discrete-dist>
+       <value name="0.8378176382660688" type="string">No</value>
+       <value name="0.16218236173393125" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1338</total>
+       <discrete-dist>
+        <value name="0.8378176382660688" type="string">No</value>
+        <value name="0.16218236173393125" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node split-rank="0.8739578445811456" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>60</closed><open>69</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>60</closed><open>69</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="737" unweighted="737"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="737" unweighted="737"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>737</total>
+      <discrete-dist>
+       <value name="0.9077340569877883" type="string">No</value>
+       <value name="0.09226594301221167" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>737</total>
+       <discrete-dist>
+        <value name="0.9077340569877883" type="string">No</value>
+        <value name="0.09226594301221167" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node split-rank="0.8739578445811456" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>69</closed><closed>72</closed></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>69</closed><closed>72</closed></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="746" unweighted="746"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="746" unweighted="746"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>746</total>
+      <discrete-dist>
+       <value name="0.9584450402144772" type="string">No</value>
+       <value name="0.04155495978552279" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>746</total>
+       <discrete-dist>
+        <value name="0.9584450402144772" type="string">No</value>
+        <value name="0.04155495978552279" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="6">
+    <split-parameters rank="0.9986156756374143" variable="6" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.8335863937829582</value>
+     <value name="ratio entropy" type="real">0.0013843243625857315</value>
+     <value name="info value" type="real">0.008203700793050515</value>
+    </split-parameters>
+    <node active="false" split-rank="0.9986156756374143" DV="19">
+     <branch-values type="list">
+      <value type="string">No</value>
+      <value type="string">No phone service</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="3390" unweighted="3390"/>
+      <frequency weighted="682" unweighted="682"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>4072</total>
+      <discrete-dist>
+       <value name="0.7497544204322201" type="string">No</value>
+       <value name="0.25024557956778" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>4072</total>
+       <discrete-dist>
+        <value name="0.7497544204322201" type="string">No</value>
+        <value name="0.25024557956778" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9986156756374143" DV="19">
+     <branch-values type="list">
+      <value type="string">Yes</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="2971" unweighted="2971"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>2971</total>
+      <discrete-dist>
+       <value name="0.713901043419724" type="string">No</value>
+       <value name="0.286098956580276" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>2971</total>
+       <discrete-dist>
+        <value name="0.713901043419724" type="string">No</value>
+        <value name="0.286098956580276" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="7">
+    <split-parameters rank="0.9039504351937714" variable="7" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.7545653466242064</value>
+     <value name="ratio entropy" type="real">0.09604956480622862</value>
+     <value name="info value" type="real">0.6179525742200359</value>
+    </split-parameters>
+    <node active="false" split-rank="0.9039504351937714" DV="19">
+     <branch-values type="list">
+      <value type="string">DSL</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="2421" unweighted="2421"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>2421</total>
+      <discrete-dist>
+       <value name="0.8104089219330854" type="string">No</value>
+       <value name="0.1895910780669145" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>2421</total>
+       <discrete-dist>
+        <value name="0.8104089219330854" type="string">No</value>
+        <value name="0.1895910780669145" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9039504351937714" DV="19">
+     <branch-values type="list">
+      <value type="string">Fiber optic</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="3096" unweighted="3096"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>3096</total>
+      <discrete-dist>
+       <value name="0.5810723514211886" type="string">No</value>
+       <value name="0.4189276485788114" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>3096</total>
+       <discrete-dist>
+        <value name="0.5810723514211886" type="string">No</value>
+        <value name="0.4189276485788114" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9039504351937714" DV="19">
+     <branch-values type="list">
+      <value type="string">No</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="1526" unweighted="1526"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>1526</total>
+      <discrete-dist>
+       <value name="0.9259501965923984" type="string">No</value>
+       <value name="0.07404980340760157" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1526</total>
+       <discrete-dist>
+        <value name="0.9259501965923984" type="string">No</value>
+        <value name="0.07404980340760157" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="8">
+    <split-parameters rank="0.8882174365977968" variable="8" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.741432352737805</value>
+     <value name="ratio entropy" type="real">0.11178256340220316</value>
+     <value name="info value" type="real">0.7177771388702754</value>
+    </split-parameters>
+    <node active="false" split-rank="0.8882174365977968" DV="19">
+     <branch-values type="list">
+      <value type="string">No</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="3498" unweighted="3498"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>3498</total>
+      <discrete-dist>
+       <value name="0.5823327615780446" type="string">No</value>
+       <value name="0.4176672384219554" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>3498</total>
+       <discrete-dist>
+        <value name="0.5823327615780446" type="string">No</value>
+        <value name="0.4176672384219554" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.8882174365977968" DV="19">
+     <branch-values type="list">
+      <value type="string">No internet service</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="1526" unweighted="1526"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>1526</total>
+      <discrete-dist>
+       <value name="0.9259501965923984" type="string">No</value>
+       <value name="0.07404980340760157" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1526</total>
+       <discrete-dist>
+        <value name="0.9259501965923984" type="string">No</value>
+        <value name="0.07404980340760157" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.8882174365977968" DV="19">
+     <branch-values type="list">
+      <value type="string">Yes</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="2019" unweighted="2019"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>2019</total>
+      <discrete-dist>
+       <value name="0.8538880633977216" type="string">No</value>
+       <value name="0.14611193660227836" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>2019</total>
+       <discrete-dist>
+        <value name="0.8538880633977216" type="string">No</value>
+        <value name="0.14611193660227836" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="9">
+    <split-parameters rank="0.9191282385059097" variable="9" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.7672348957181926</value>
+     <value name="ratio entropy" type="real">0.08087176149409026</value>
+     <value name="info value" type="real">0.5286341230339946</value>
+    </split-parameters>
+    <node active="false" split-rank="0.9191282385059097" DV="19">
+     <branch-values type="list">
+      <value type="string">No</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="3088" unweighted="3088"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>3088</total>
+      <discrete-dist>
+       <value name="0.6007124352331606" type="string">No</value>
+       <value name="0.39928756476683935" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>3088</total>
+       <discrete-dist>
+        <value name="0.6007124352331606" type="string">No</value>
+        <value name="0.39928756476683935" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9191282385059097" DV="19">
+     <branch-values type="list">
+      <value type="string">No internet service</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="1526" unweighted="1526"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>1526</total>
+      <discrete-dist>
+       <value name="0.9259501965923984" type="string">No</value>
+       <value name="0.07404980340760157" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1526</total>
+       <discrete-dist>
+        <value name="0.9259501965923984" type="string">No</value>
+        <value name="0.07404980340760157" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9191282385059097" DV="19">
+     <branch-values type="list">
+      <value type="string">Yes</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="2429" unweighted="2429"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>2429</total>
+      <discrete-dist>
+       <value name="0.7846850555784274" type="string">No</value>
+       <value name="0.21531494442157267" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>2429</total>
+       <discrete-dist>
+        <value name="0.7846850555784274" type="string">No</value>
+        <value name="0.21531494442157267" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="10">
+    <split-parameters rank="0.9240978515341682" variable="10" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.7713832401752116</value>
+     <value name="ratio entropy" type="real">0.07590214846583176</value>
+     <value name="info value" type="real">0.4997245050043479</value>
+    </split-parameters>
+    <node active="false" split-rank="0.9240978515341682" DV="19">
+     <branch-values type="list">
+      <value type="string">No</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="3095" unweighted="3095"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>3095</total>
+      <discrete-dist>
+       <value name="0.6087237479806139" type="string">No</value>
+       <value name="0.3912762520193861" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>3095</total>
+       <discrete-dist>
+        <value name="0.6087237479806139" type="string">No</value>
+        <value name="0.3912762520193861" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9240978515341682" DV="19">
+     <branch-values type="list">
+      <value type="string">No internet service</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="1526" unweighted="1526"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>1526</total>
+      <discrete-dist>
+       <value name="0.9259501965923984" type="string">No</value>
+       <value name="0.07404980340760157" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1526</total>
+       <discrete-dist>
+        <value name="0.9259501965923984" type="string">No</value>
+        <value name="0.07404980340760157" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9240978515341682" DV="19">
+     <branch-values type="list">
+      <value type="string">Yes</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="2422" unweighted="2422"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>2422</total>
+      <discrete-dist>
+       <value name="0.7749793559042114" type="string">No</value>
+       <value name="0.2250206440957886" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>2422</total>
+       <discrete-dist>
+        <value name="0.7749793559042114" type="string">No</value>
+        <value name="0.2250206440957886" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="11">
+    <split-parameters rank="0.891079948130207" variable="11" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.743821811188816</value>
+     <value name="ratio entropy" type="real">0.10892005186979303</value>
+     <value name="info value" type="real">0.699567294911045</value>
+    </split-parameters>
+    <node active="false" split-rank="0.891079948130207" DV="19">
+     <branch-values type="list">
+      <value type="string">No</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="3473" unweighted="3473"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>3473</total>
+      <discrete-dist>
+       <value name="0.5836452634609848" type="string">No</value>
+       <value name="0.4163547365390153" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>3473</total>
+       <discrete-dist>
+        <value name="0.5836452634609848" type="string">No</value>
+        <value name="0.4163547365390153" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.891079948130207" DV="19">
+     <branch-values type="list">
+      <value type="string">No internet service</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="1526" unweighted="1526"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>1526</total>
+      <discrete-dist>
+       <value name="0.9259501965923984" type="string">No</value>
+       <value name="0.07404980340760157" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1526</total>
+       <discrete-dist>
+        <value name="0.9259501965923984" type="string">No</value>
+        <value name="0.07404980340760157" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.891079948130207" DV="19">
+     <branch-values type="list">
+      <value type="string">Yes</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="2044" unweighted="2044"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>2044</total>
+      <discrete-dist>
+       <value name="0.8483365949119374" type="string">No</value>
+       <value name="0.15166340508806261" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>2044</total>
+       <discrete-dist>
+        <value name="0.8483365949119374" type="string">No</value>
+        <value name="0.15166340508806261" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="12">
+    <split-parameters rank="0.9448530438953934" variable="12" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.7887084698654245</value>
+     <value name="ratio entropy" type="real">0.055146956104606626</value>
+     <value name="info value" type="real">0.38046232986293527</value>
+    </split-parameters>
+    <node active="false" split-rank="0.9448530438953934" DV="19">
+     <branch-values type="list">
+      <value type="string">No</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="2810" unweighted="2810"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>2810</total>
+      <discrete-dist>
+       <value name="0.6647686832740214" type="string">No</value>
+       <value name="0.33523131672597867" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>2810</total>
+       <discrete-dist>
+        <value name="0.6647686832740214" type="string">No</value>
+        <value name="0.33523131672597867" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9448530438953934" DV="19">
+     <branch-values type="list">
+      <value type="string">No internet service</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="1526" unweighted="1526"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>1526</total>
+      <discrete-dist>
+       <value name="0.9259501965923984" type="string">No</value>
+       <value name="0.07404980340760157" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1526</total>
+       <discrete-dist>
+        <value name="0.9259501965923984" type="string">No</value>
+        <value name="0.07404980340760157" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9448530438953934" DV="19">
+     <branch-values type="list">
+      <value type="string">Yes</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="2707" unweighted="2707"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>2707</total>
+      <discrete-dist>
+       <value name="0.699298115995567" type="string">No</value>
+       <value name="0.30070188400443293" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>2707</total>
+       <discrete-dist>
+        <value name="0.699298115995567" type="string">No</value>
+        <value name="0.30070188400443293" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="13">
+    <split-parameters rank="0.944692355010166" variable="13" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.7885743361124448</value>
+     <value name="ratio entropy" type="real">0.05530764498983398</value>
+     <value name="info value" type="real">0.38137431200674277</value>
+    </split-parameters>
+    <node active="false" split-rank="0.944692355010166" DV="19">
+     <branch-values type="list">
+      <value type="string">No</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="2785" unweighted="2785"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>2785</total>
+      <discrete-dist>
+       <value name="0.6631956912028726" type="string">No</value>
+       <value name="0.33680430879712747" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>2785</total>
+       <discrete-dist>
+        <value name="0.6631956912028726" type="string">No</value>
+        <value name="0.33680430879712747" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.944692355010166" DV="19">
+     <branch-values type="list">
+      <value type="string">No internet service</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="1526" unweighted="1526"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>1526</total>
+      <discrete-dist>
+       <value name="0.9259501965923984" type="string">No</value>
+       <value name="0.07404980340760157" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1526</total>
+       <discrete-dist>
+        <value name="0.9259501965923984" type="string">No</value>
+        <value name="0.07404980340760157" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.944692355010166" DV="19">
+     <branch-values type="list">
+      <value type="string">Yes</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="2732" unweighted="2732"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>2732</total>
+      <discrete-dist>
+       <value name="0.7005856515373353" type="string">No</value>
+       <value name="0.29941434846266474" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>2732</total>
+       <discrete-dist>
+        <value name="0.7005856515373353" type="string">No</value>
+        <value name="0.29941434846266474" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="14">
+    <split-parameters rank="0.829842345432698" variable="14" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.6927042154591605</value>
+     <value name="ratio entropy" type="real">0.17015765456730203</value>
+     <value name="info value" type="real">1.238559792784284</value>
+    </split-parameters>
+    <node active="false" split-rank="0.829842345432698" DV="19">
+     <branch-values type="list">
+      <value type="string">Month-to-month</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="3875" unweighted="3875"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>3875</total>
+      <discrete-dist>
+       <value name="0.5729032258064516" type="string">No</value>
+       <value name="0.4270967741935484" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>3875</total>
+       <discrete-dist>
+        <value name="0.5729032258064516" type="string">No</value>
+        <value name="0.4270967741935484" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.829842345432698" DV="19">
+     <branch-values type="list">
+      <value type="string">One year</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="1473" unweighted="1473"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>1473</total>
+      <discrete-dist>
+       <value name="0.8873048200950441" type="string">No</value>
+       <value name="0.11269517990495587" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1473</total>
+       <discrete-dist>
+        <value name="0.8873048200950441" type="string">No</value>
+        <value name="0.11269517990495587" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.829842345432698" DV="19">
+     <branch-values type="list">
+      <value type="string">Two year</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="1695" unweighted="1695"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>1695</total>
+      <discrete-dist>
+       <value name="0.9716814159292035" type="string">No</value>
+       <value name="0.02831858407079646" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1695</total>
+       <discrete-dist>
+        <value name="0.9716814159292035" type="string">No</value>
+        <value name="0.02831858407079646" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="15">
+    <split-parameters rank="0.9668260768868346" variable="15" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.8070502822149234</value>
+     <value name="ratio entropy" type="real">0.03317392311316536</value>
+     <value name="info value" type="real">0.20306838467477684</value>
+    </split-parameters>
+    <node active="false" split-rank="0.9668260768868346" DV="19">
+     <branch-values type="list">
+      <value type="string">No</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="2872" unweighted="2872"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>2872</total>
+      <discrete-dist>
+       <value name="0.8366991643454039" type="string">No</value>
+       <value name="0.1633008356545961" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>2872</total>
+       <discrete-dist>
+        <value name="0.8366991643454039" type="string">No</value>
+        <value name="0.1633008356545961" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9668260768868346" DV="19">
+     <branch-values type="list">
+      <value type="string">Yes</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="4171" unweighted="4171"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>4171</total>
+      <discrete-dist>
+       <value name="0.6643490769599616" type="string">No</value>
+       <value name="0.33565092304003835" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>4171</total>
+       <discrete-dist>
+        <value name="0.6643490769599616" type="string">No</value>
+        <value name="0.33565092304003835" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="16">
+    <split-parameters rank="0.9232085677082426" variable="16" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.7706409176625696</value>
+     <value name="ratio entropy" type="real">0.07679143229175744</value>
+     <value name="info value" type="real">0.4559742407269031</value>
+    </split-parameters>
+    <node active="false" split-rank="0.9232085677082426" DV="19">
+     <branch-values type="list">
+      <value type="string">Bank transfer (automatic)</value>
+      <value type="string">Credit card (automatic)</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="1544" unweighted="1544"/>
+      <frequency weighted="1522" unweighted="1522"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>3066</total>
+      <discrete-dist>
+       <value name="0.8401826484018264" type="string">No</value>
+       <value name="0.1598173515981735" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>3066</total>
+       <discrete-dist>
+        <value name="0.8401826484018264" type="string">No</value>
+        <value name="0.1598173515981735" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9232085677082426" DV="19">
+     <branch-values type="list">
+      <value type="string">Electronic check</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="2365" unweighted="2365"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>2365</total>
+      <discrete-dist>
+       <value name="0.5471458773784356" type="string">No</value>
+       <value name="0.4528541226215645" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>2365</total>
+       <discrete-dist>
+        <value name="0.5471458773784356" type="string">No</value>
+        <value name="0.4528541226215645" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9232085677082426" DV="19">
+     <branch-values type="list">
+      <value type="string">Mailed check</value>
+     </branch-values>
+     <branch-values type="range"/>
+     <branch-frequencies type="list">
+      <frequency weighted="1612" unweighted="1612"/>
+     </branch-frequencies>
+     <branch-frequencies type="range"/>
+     <node-dist data="train">
+      <total>1612</total>
+      <discrete-dist>
+       <value name="0.8089330024813896" type="string">No</value>
+       <value name="0.19106699751861042" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1612</total>
+       <discrete-dist>
+        <value name="0.8089330024813896" type="string">No</value>
+        <value name="0.19106699751861042" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="17">
+    <split-parameters rank="0.9440713496039025" variable="17" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.7880559568502761</value>
+     <value name="ratio entropy" type="real">0.05592865039609751</value>
+     <value name="info value" type="real">0.3608325727016506</value>
+    </split-parameters>
+    <node active="false" split-rank="0.9440713496039025" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>18.25</closed><open>25.05</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>18.25</closed><open>25.05</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="1406" unweighted="1406"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="1406" unweighted="1406"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>1406</total>
+      <discrete-dist>
+       <value name="0.9096728307254623" type="string">No</value>
+       <value name="0.0903271692745377" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1406</total>
+       <discrete-dist>
+        <value name="0.9096728307254623" type="string">No</value>
+        <value name="0.0903271692745377" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9440713496039025" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>25.05</closed><open>70.35</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>25.05</closed><open>70.35</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="2113" unweighted="2113"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="2113" unweighted="2113"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>2113</total>
+      <discrete-dist>
+       <value name="0.7614765735920492" type="string">No</value>
+       <value name="0.23852342640795077" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>2113</total>
+       <discrete-dist>
+        <value name="0.7614765735920492" type="string">No</value>
+        <value name="0.23852342640795077" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9440713496039025" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>70.35</closed><open>94.25</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>70.35</closed><open>94.25</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="2109" unweighted="2109"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="2109" unweighted="2109"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>2109</total>
+      <discrete-dist>
+       <value name="0.6344238975817923" type="string">No</value>
+       <value name="0.3655761024182077" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>2109</total>
+       <discrete-dist>
+        <value name="0.6344238975817923" type="string">No</value>
+        <value name="0.3655761024182077" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9440713496039025" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>94.25</closed><open>102.6</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>94.25</closed><open>102.6</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="707" unweighted="707"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="707" unweighted="707"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>707</total>
+      <discrete-dist>
+       <value name="0.5869872701555869" type="string">No</value>
+       <value name="0.413012729844413" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>707</total>
+       <discrete-dist>
+        <value name="0.5869872701555869" type="string">No</value>
+        <value name="0.413012729844413" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9440713496039025" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>102.6</closed><closed>118.75</closed></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>102.6</closed><closed>118.75</closed></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="708" unweighted="708"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="708" unweighted="708"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>708</total>
+      <discrete-dist>
+       <value name="0.7528248587570622" type="string">No</value>
+       <value name="0.24717514124293785" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>708</total>
+       <discrete-dist>
+        <value name="0.7528248587570622" type="string">No</value>
+        <value name="0.24717514124293785" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+   <split IV="18">
+    <split-parameters rank="0.9429066504939946" variable="18" statistic="0">
+     <value name="input entropy" type="real">0.8347419473972124</value>
+     <value name="output entropy" type="real">0.7870837336471398</value>
+     <value name="ratio entropy" type="real">0.05709334950600542</value>
+     <value name="info value" type="real">0.34188497402187645</value>
+    </split-parameters>
+    <node active="false" split-rank="0.9429066504939946" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>18.8</closed><open>94.4</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>18.8</closed><open>94.4</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="781" unweighted="781"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="781" unweighted="781"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>781</total>
+      <discrete-dist>
+       <value name="0.4673495518565941" type="string">No</value>
+       <value name="0.5326504481434059" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>781</total>
+       <discrete-dist>
+        <value name="0.4673495518565941" type="string">No</value>
+        <value name="0.5326504481434059" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9429066504939946" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>94.4</closed><open>321.65</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>94.4</closed><open>321.65</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="781" unweighted="781"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="781" unweighted="781"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>781</total>
+      <discrete-dist>
+       <value name="0.6363636363636364" type="string">No</value>
+       <value name="0.36363636363636365" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>781</total>
+       <discrete-dist>
+        <value name="0.6363636363636364" type="string">No</value>
+        <value name="0.36363636363636365" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9429066504939946" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>321.65</closed><open>1145.7</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>321.65</closed><open>1145.7</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="1563" unweighted="1563"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="1563" unweighted="1563"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>1563</total>
+      <discrete-dist>
+       <value name="0.7223288547664747" type="string">No</value>
+       <value name="0.27767114523352526" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>1563</total>
+       <discrete-dist>
+        <value name="0.7223288547664747" type="string">No</value>
+        <value name="0.27767114523352526" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9429066504939946" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>1145.7</closed><open>1728.2</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>1145.7</closed><open>1728.2</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="781" unweighted="781"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="781" unweighted="781"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>781</total>
+      <discrete-dist>
+       <value name="0.8028169014084507" type="string">No</value>
+       <value name="0.19718309859154928" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>781</total>
+       <discrete-dist>
+        <value name="0.8028169014084507" type="string">No</value>
+        <value name="0.19718309859154928" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9429066504939946" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>1728.2</closed><open>2745.7</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>1728.2</closed><open>2745.7</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="782" unweighted="782"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="782" unweighted="782"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>782</total>
+      <discrete-dist>
+       <value name="0.7519181585677749" type="string">No</value>
+       <value name="0.24808184143222506" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>782</total>
+       <discrete-dist>
+        <value name="0.7519181585677749" type="string">No</value>
+        <value name="0.24808184143222506" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9429066504939946" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>2745.7</closed><open>4144.9</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>2745.7</closed><open>4144.9</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="781" unweighted="781"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="781" unweighted="781"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>781</total>
+      <discrete-dist>
+       <value name="0.793854033290653" type="string">No</value>
+       <value name="0.20614596670934698" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>781</total>
+       <discrete-dist>
+        <value name="0.793854033290653" type="string">No</value>
+        <value name="0.20614596670934698" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9429066504939946" DV="19">
+     <branch-values type="list">
+      <value type="real"><closed>4144.9</closed><open>5809.75</open></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="real"><closed>4144.9</closed><open>5809.75</open></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="781" unweighted="781"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="781" unweighted="781"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>781</total>
+      <discrete-dist>
+       <value name="0.8335467349551856" type="string">No</value>
+       <value name="0.16645326504481434" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>781</total>
+       <discrete-dist>
+        <value name="0.8335467349551856" type="string">No</value>
+        <value name="0.16645326504481434" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+    <node active="false" split-rank="0.9429066504939946" DV="19">
+     <branch-values type="list">
+      <value type="missing">Missing</value>
+      <value type="real"><closed>5809.75</closed><closed>8684.8</closed></value>
+     </branch-values>
+     <branch-values type="range">
+      <value type="missing">Missing</value>
+      <value type="real"><closed>5809.75</closed><closed>8684.8</closed></value>
+     </branch-values>
+     <branch-frequencies type="list">
+      <frequency weighted="11" unweighted="11"/>
+      <frequency weighted="782" unweighted="782"/>
+     </branch-frequencies>
+     <branch-frequencies type="range">
+      <frequency weighted="11" unweighted="11"/>
+      <frequency weighted="782" unweighted="782"/>
+     </branch-frequencies>
+     <node-dist data="train">
+      <total>793</total>
+      <discrete-dist>
+       <value name="0.8789407313997478" type="string">No</value>
+       <value name="0.1210592686002522" type="string">Yes</value>
+      </discrete-dist>
+     </node-dist>
+     <node-outcome DV="19">
+      <node-dist data="train">
+       <total>793</total>
+       <discrete-dist>
+        <value name="0.8789407313997478" type="string">No</value>
+        <value name="0.1210592686002522" type="string">Yes</value>
+       </discrete-dist>
+      </node-dist>
+     </node-outcome>
+    </node>
+   </split>
+  </node>
+ </tree-model>
+</predictive-model>
